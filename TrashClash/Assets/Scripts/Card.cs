@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 [AddComponentMenu("Collection/Card")]
 [System.Serializable]
-public class Card : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class Card : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IPointerUpHandler, IDragHandler
 {
     #region Stats
     [Foldout("Card Stats")] public string title;
@@ -59,7 +59,7 @@ public class Card : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndD
     {
         Debug.Log("Mouse Clicked");
     }
-    public void OnEndDrag(PointerEventData eventData)
+    public void OnPointerUp(PointerEventData eventData)
     {
         isDragging = false;
         canvasGroup.blocksRaycasts = true;
@@ -82,4 +82,3 @@ public class Card : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndD
 
 
 }
-
