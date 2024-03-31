@@ -34,7 +34,7 @@ public class Selection : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
 
             if (selected)
             {
-                endPosition = startPos + new Vector3(0f, verticalMove, 0f);
+                endPosition = startPos + new Vector3(0, verticalMove, 0f);
                 endScale = startScale * scaleIncrease;
             }
 
@@ -47,7 +47,7 @@ public class Selection : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
             Vector3 lerpPos = Vector3.MoveTowards(transform.position, endPosition, (currentTime / transitionTime));
             Vector3 lerpScale = Vector3.MoveTowards(transform.localScale, endScale, (currentTime / transitionTime));
 
-            transform.position = lerpPos;
+            transform.localPosition = lerpPos;
             transform.localScale = lerpScale;
 
             yield return null;

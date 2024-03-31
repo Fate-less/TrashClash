@@ -19,9 +19,9 @@ public class CameraTransition : MonoBehaviour
         offset = transform.position - target.position;
     }
 
-    void Update()
+    public void ChangeTurn()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && !isRotating)
+        if (!isRotating)
         {
             StartCoroutine(RotateCamera());
         }
