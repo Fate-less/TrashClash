@@ -34,5 +34,13 @@ namespace CardHouse
                 CurrencyRegistry.Instance.AdjustCurrency(resource.Cost.CurrencyType.Name, PhaseManager.Instance.PlayerIndex, -1 * resource.Cost.Amount);
             }
         }
+
+        public void Deactivate()
+        {
+            foreach (var resource in Cost)
+            {
+                CurrencyRegistry.Instance.AdjustCurrency(resource.Cost.CurrencyType.Name, PhaseManager.Instance.PlayerIndex, +1 * resource.Cost.Amount);
+            }
+        }
     }
 }

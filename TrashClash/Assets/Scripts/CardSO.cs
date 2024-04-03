@@ -15,8 +15,9 @@ namespace CardHouse
     public class CardSO : CardDefinition
     {
         public int Cost;
-        public int Value;
-        public int Penalty;
+        public int Value; //power kalo bener kategori
+        public int Penalty; //power kalo salah kategori
+        public int None; //power kalo belom ada kategori
         public TrashType Kategori;
         public Sprite Art;
     }

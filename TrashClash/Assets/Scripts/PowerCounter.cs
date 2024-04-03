@@ -30,6 +30,10 @@ public class PowerCounter : MonoBehaviour
                 {
                     power1 = slot1.MountedCards[0].GetComponent<TrashCard>().Value;
                 }
+                else if(kategoriArea == "None")
+                {
+                    power1 = slot1.MountedCards[0].GetComponent<TrashCard>().None;
+                }
                 else
                 {
                     power1 = slot1.MountedCards[0].GetComponent<TrashCard>().Penalty;
@@ -46,6 +50,10 @@ public class PowerCounter : MonoBehaviour
                 if (kategoriArea == slot2.MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                 {
                     power2 = slot2.MountedCards[0].GetComponent<TrashCard>().Value;
+                }
+                else if (kategoriArea == "None")
+                {
+                    power2 = slot2.MountedCards[0].GetComponent<TrashCard>().None;
                 }
                 else
                 {
@@ -64,6 +72,10 @@ public class PowerCounter : MonoBehaviour
                 {
                     power3 = slot3.MountedCards[0].GetComponent<TrashCard>().Value;
                 }
+                else if (kategoriArea == "None")
+                {
+                    power3 = slot3.MountedCards[0].GetComponent<TrashCard>().None;
+                }
                 else
                 {
                     power3 = slot3.MountedCards[0].GetComponent<TrashCard>().Penalty;
@@ -80,6 +92,10 @@ public class PowerCounter : MonoBehaviour
                 if (kategoriArea == slot4.MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                 {
                     power4 = slot4.MountedCards[0].GetComponent<TrashCard>().Value;
+                }
+                else if (kategoriArea == "None")
+                {
+                    power4 = slot4.MountedCards[0].GetComponent<TrashCard>().None;
                 }
                 else
                 {
@@ -101,5 +117,41 @@ public class PowerCounter : MonoBehaviour
     private void Update()
     {
         DisplayPower();
+    }
+
+    public void LockCard()
+    {
+        try
+        {
+            if (slot1.MountedCards != null)
+            {
+                slot1.MountedCards[0].GetComponent<DragDetector>().IsActive = false;
+            }
+        }
+        catch { }
+        try
+        {
+            if (slot2.MountedCards != null)
+            {
+                slot2.MountedCards[0].GetComponent<DragDetector>().IsActive = false;
+            }
+        }
+        catch { }
+        try
+        {
+            if (slot3.MountedCards != null)
+            {
+                slot3.MountedCards[0].GetComponent<DragDetector>().IsActive = false;
+            }
+        }
+        catch { }
+        try
+        {
+            if (slot4.MountedCards != null)
+            {
+                slot4.MountedCards[0].GetComponent<DragDetector>().IsActive = false;
+            }
+        }
+        catch { }
     }
 }

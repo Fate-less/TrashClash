@@ -1,65 +1,59 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class TurnManager : MonoBehaviour
 {
-    public GameObject[] player1CardSlots; // Array of GameObjects representing player 1's card slots
-    public GameObject[] player2CardSlots; // Array of GameObjects representing player 2's card slots
+    [SerializeField] PowerCounter area1;
+    [SerializeField] PowerCounter area2;
+    [SerializeField] PowerCounter area3;
+    public TextMeshProUGUI phaseLabel;
+    public int round;
+    private int phase;
 
-    private int currentPlayerTurn = 1; // Variable to keep track of current player's turn (1 for player 1, 2 for player 2)
-    private int currentCardIndex = 0; // Variable to keep track of the index of the card being placed
-
-    // Start is called before the first frame update
-    void Start()
+    private void Update()
     {
-        // Initialize the game with player 1's turn
-        currentPlayerTurn = 1;
-        currentCardIndex = 0;
+        if(phase >= 2)
+        {
+            round++;
+            phase = 0;
+        }
+        if(round >= 6)
+        {
+            //game end
+            //hitung p1 ato p2 menang
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void ChangePhase()
     {
-        // Check if it's player's turn and if there are still cards to be placed
-        if (currentPlayerTurn == 1 && currentCardIndex < player1CardSlots.Length)
+        if(phase == 0)
         {
-            // Handle player 1's turn
-            if (Input.GetMouseButtonDown(0)) // Assuming left mouse click is used to place the card
-            {
-                // Place the card in the current card slot
-                // Example: player1CardSlots[currentCardIndex].PlaceCard(card);
-                currentCardIndex++;
-
-                // Check if all cards are placed by player 1
-                if (currentCardIndex >= player1CardSlots.Length)
-                {
-                    // Switch to player 2's turn
-                    currentPlayerTurn = 2;
-                    currentCardIndex = 0;
-                }
-            }
+            //buka kartu
+            //energy nambah
         }
-        else if (currentPlayerTurn == 2 && currentCardIndex < player2CardSlots.Length)
+        if(phase == 1)
         {
-            // Handle player 2's turn
-            if (Input.GetMouseButtonDown(0)) // Assuming left mouse click is used to place the card
-            {
-                // Place the card in the current card slot
-                // Example: player2CardSlots[currentCardIndex].PlaceCard(card);
-                currentCardIndex++;
+            area1.LockCard();
+            area2.LockCard();
+            area3.LockCard();
+            //kunci kartu
+            //tutup kartu
+            //rotate
+        }
+        phase++;
+    }
 
-                // Check if all cards are placed by player 2
-                if (currentCardIndex >= player2CardSlots.Length)
-                {
-                    // Switch to player 1's turn
-                    currentPlayerTurn = 1;
-                    currentCardIndex = 0;
-
-                    // Now both players have placed their cards, you can proceed to the next phase of the game
-                    // For example, you can trigger the start of the game logic or any other actions here
-                }
-            }
+    void ShowPhase()
+    {
+        if (phase == 0)
+        {
+            phaseLabel.text = "Show Card";
+        }
+        if(phase == 1)
+        {
+            phaseLabel.text = "End Turn";
         }
     }
 }
