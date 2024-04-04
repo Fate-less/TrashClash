@@ -16,5 +16,6 @@ MonoBehaviour:
   Cost: 3
   Value: 3
   Penalty: 1
+  None: 3
   Kategori: 1
   Art: {fileID: 21300000, guid: e9f9c609e89eda349abd734ea50855ce, type: 3}

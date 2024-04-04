@@ -10,6 +10,7 @@ namespace CardHouse
         public int Cost { get; private set; }
         public int Value { get; private set; }
         public int Penalty { get; private set; }
+        public int None { get; private set; }
 
         public override void Apply(CardDefinition data)
         {

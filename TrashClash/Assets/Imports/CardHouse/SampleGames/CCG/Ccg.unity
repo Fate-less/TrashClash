@@ -13,7 +13,7 @@ OcclusionCullingSettings:
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 9
+  serializedVersion: 10
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -44,7 +44,6 @@ RenderSettings:
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 12
-  m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -67,9 +66,6 @@ LightmapSettings:
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
     m_TextureCompression: 1
-    m_FinalGather: 0
-    m_FinalGatherFiltering: 1
-    m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
     m_MixedBakeMode: 2
     m_BakeBackend: 0
@@ -176,7 +172,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275320231805358641, guid: 13ab4b90f5baff846a28692968435cdf, type: 3}
-      propertyPath: ClickGates.Gates.Array.data[0]
+      propertyPath: 'ClickGates.Gates.Array.data[0]'
       value: 
       objectReference: {fileID: 1810608}
     - target: {fileID: 8275320231805358641, guid: 13ab4b90f5baff846a28692968435cdf, type: 3}
@@ -299,13 +295,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 310048698}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
   m_LocalPosition: {x: -3.56, y: 0.34, z: -0.3760325}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &341062261 stripped
 GameObject:
@@ -446,13 +442,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -506,13 +502,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 934511656}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 4.02, y: 0.59, z: -0.3760325}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1084053393 stripped
 GameObject:
@@ -597,13 +593,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1085682695}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1226679124
 GameObject:
@@ -628,13 +624,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1226679124}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.9999994, w: 0.0011079012}
   m_LocalPosition: {x: 0, y: 1.04, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1483963578
 GameObject:
@@ -667,7 +663,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1724480963}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -737,15 +732,17 @@ MonoBehaviour:
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
-  m_enableWordWrapping: 1
+  m_TextWrappingMode: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
   m_linkedTextComponent: {fileID: 0}
   parentLinkedComponent: {fileID: 0}
   m_enableKerning: 1
+  m_ActiveFontFeatures: 6e72656b
   m_enableExtraPadding: 0
   checkPaddingRequired: 0
   m_isRichText: 1
+  m_EmojiFallbackSupport: 1
   m_parseCtrlCharacters: 1
   m_isOrthographic: 0
   m_isCullingEnabled: 0
@@ -783,6 +780,8 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -831,13 +830,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505187657}
+  serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1549370654 stripped
 GameObject:
@@ -899,7 +898,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7272184987812359525, guid: 0ba2a742026126f498ca76981686a7ad, type: 3}
-      propertyPath: DropGates.Gates.Array.data[0]
+      propertyPath: 'DropGates.Gates.Array.data[0]'
       value: 
       objectReference: {fileID: 1684115158}
     - target: {fileID: 7272184987812359528, guid: 0ba2a742026126f498ca76981686a7ad, type: 3}
@@ -1100,7 +1099,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3147709442397729032, guid: 15506913820fd884a8167f791f9d0f65, type: 3}
-      propertyPath: DropGates.Gates.Array.data[0]
+      propertyPath: 'DropGates.Gates.Array.data[0]'
       value: 
       objectReference: {fileID: 1724480966}
     m_RemovedComponents:
@@ -1297,7 +1296,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3147709442397729032, guid: 15506913820fd884a8167f791f9d0f65, type: 3}
-      propertyPath: DropGates.Gates.Array.data[0]
+      propertyPath: 'DropGates.Gates.Array.data[0]'
       value: 
       objectReference: {fileID: 1873821906}
     m_RemovedComponents: []
@@ -1555,7 +1554,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3147709442397729032, guid: 15506913820fd884a8167f791f9d0f65, type: 3}
-      propertyPath: DropGates.Gates.Array.data[0]
+      propertyPath: 'DropGates.Gates.Array.data[0]'
       value: 
       objectReference: {fileID: 1549370655}
     m_RemovedComponents: []
@@ -1778,11 +1777,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6155219491839174572, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: GroupsToShuffle.Array.data[0]
+      propertyPath: 'GroupsToShuffle.Array.data[0]'
       value: 
       objectReference: {fileID: 190633735}
     - target: {fileID: 6155219491839174572, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: GroupsToShuffle.Array.data[1]
+      propertyPath: 'GroupsToShuffle.Array.data[1]'
       value: 
       objectReference: {fileID: 1970082754}
     - target: {fileID: 6155219491839174572, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
@@ -2006,7 +2005,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1226679125}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: AllPhaseDependentButtons.Array.data[0]
+      propertyPath: 'AllPhaseDependentButtons.Array.data[0]'
       value: 
       objectReference: {fileID: 372845512}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
@@ -2042,11 +2041,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 310048699}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[0].ActiveButtons.Array.data[0]
+      propertyPath: 'Phases.Array.data[0].ActiveButtons.Array.data[0]'
       value: 
       objectReference: {fileID: 372845512}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[1].ActiveButtons.Array.data[0]
+      propertyPath: 'Phases.Array.data[1].ActiveButtons.Array.data[0]'
       value: 
       objectReference: {fileID: 372845512}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
@@ -2058,11 +2057,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[0].ValidClickTargets.Array.data[0]
+      propertyPath: 'Phases.Array.data[0].ValidClickTargets.Array.data[0]'
       value: 
       objectReference: {fileID: 8275320233858973973}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[0].ValidClickTargets.Array.data[1]
+      propertyPath: 'Phases.Array.data[0].ValidClickTargets.Array.data[1]'
       value: 
       objectReference: {fileID: 53362525}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
@@ -2086,11 +2085,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 673341365}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[1].ValidClickTargets.Array.data[0]
+      propertyPath: 'Phases.Array.data[1].ValidClickTargets.Array.data[0]'
       value: 
       objectReference: {fileID: 163788787}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[1].ValidClickTargets.Array.data[1]
+      propertyPath: 'Phases.Array.data[1].ValidClickTargets.Array.data[1]'
       value: 
       objectReference: {fileID: 1970082753}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
@@ -2210,11 +2209,11 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[0].PhaseStartResponses.Responses.Array.data[0]
+      propertyPath: 'Phases.Array.data[0].PhaseStartResponses.Responses.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 3880d9a953bc04a47a021b4bcd93c9cf, type: 2}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
-      propertyPath: Phases.Array.data[1].PhaseStartResponses.Responses.Array.data[0]
+      propertyPath: 'Phases.Array.data[1].PhaseStartResponses.Responses.Array.data[0]'
       value: 
       objectReference: {fileID: 11400000, guid: 3880d9a953bc04a47a021b4bcd93c9cf, type: 2}
     - target: {fileID: 6155219491839174573, guid: 9aa470ac017dc5c4a841406dde1da1be, type: 3}
@@ -2680,7 +2679,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8433662383606087800, guid: 4b0b066e6b249b84bacd9e6fb5225679, type: 3}
-      propertyPath: DropGates.Gates.Array.data[0]
+      propertyPath: 'DropGates.Gates.Array.data[0]'
       value: 
       objectReference: {fileID: 6819727805608071743}
     m_RemovedComponents: []
@@ -2990,7 +2989,7 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8275320231805358641, guid: 13ab4b90f5baff846a28692968435cdf, type: 3}
-      propertyPath: ClickGates.Gates.Array.data[0]
+      propertyPath: 'ClickGates.Gates.Array.data[0]'
       value: 
       objectReference: {fileID: 341062262}
     - target: {fileID: 8275320231805358641, guid: 13ab4b90f5baff846a28692968435cdf, type: 3}
@@ -3150,3 +3149,26 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 0ba2a742026126f498ca76981686a7ad, type: 3}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1505187658}
+  - {fileID: 1226679125}
+  - {fileID: 519420032}
+  - {fileID: 6155219491839174570}
+  - {fileID: 8131157071342848855}
+  - {fileID: 8431695353487871297}
+  - {fileID: 356464860807548724}
+  - {fileID: 6819727805608071734}
+  - {fileID: 1458513860377905111}
+  - {fileID: 8275320233858973972}
+  - {fileID: 8172168332853394722}
+  - {fileID: 1085682698}
+  - {fileID: 1873821902}
+  - {fileID: 1724480961}
+  - {fileID: 1684115155}
+  - {fileID: 1970082752}
+  - {fileID: 163788786}
+  - {fileID: 934511657}
+  - {fileID: 310048699}
