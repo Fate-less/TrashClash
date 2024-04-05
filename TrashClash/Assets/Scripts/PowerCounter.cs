@@ -7,20 +7,25 @@ using TMPro;
 
 public class PowerCounter : MonoBehaviour
 {
-    [SerializeField] string kategoriArea;
+    public PowerCounter enemyCounter;
+    public string kategoriArea;
     [SerializeField] TextMeshPro powerLabel;
     public CardGroup slot1;
     public CardGroup slot2;
     public CardGroup slot3;
     public CardGroup slot4;
     public int power;
+    public int power1 = 0;
+    public int power2 = 0;
+    public int power3 = 0;
+    public int power4 = 0;
 
     public void CountPower()
     {
-        int power1 = 0;
-        int power2 = 0;
-        int power3 = 0;
-        int power4 = 0;
+        power1 = 0;
+        power2 = 0;
+        power3 = 0;
+        power4 = 0;
         try
         {
             if (slot1.MountedCards != null)
@@ -29,6 +34,7 @@ public class PowerCounter : MonoBehaviour
                 if (kategoriArea == slot1.MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                 {
                     power1 = slot1.MountedCards[0].GetComponent<TrashCard>().Value;
+                    enemyCounter.power1 -= slot1.MountedCards[0].GetComponent<TrashCard>().Debuff;
                 }
                 else if(kategoriArea == "None")
                 {
@@ -50,6 +56,7 @@ public class PowerCounter : MonoBehaviour
                 if (kategoriArea == slot2.MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                 {
                     power2 = slot2.MountedCards[0].GetComponent<TrashCard>().Value;
+                    enemyCounter.power2 -= slot2.MountedCards[0].GetComponent<TrashCard>().Debuff;
                 }
                 else if (kategoriArea == "None")
                 {
@@ -71,6 +78,7 @@ public class PowerCounter : MonoBehaviour
                 if (kategoriArea == slot3.MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                 {
                     power3 = slot3.MountedCards[0].GetComponent<TrashCard>().Value;
+                    enemyCounter.power3 -= slot3.MountedCards[0].GetComponent<TrashCard>().Debuff;
                 }
                 else if (kategoriArea == "None")
                 {
@@ -92,6 +100,7 @@ public class PowerCounter : MonoBehaviour
                 if (kategoriArea == slot4.MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                 {
                     power4 = slot4.MountedCards[0].GetComponent<TrashCard>().Value;
+                    enemyCounter.power4 -= slot4.MountedCards[0].GetComponent<TrashCard>().Debuff;
                 }
                 else if (kategoriArea == "None")
                 {

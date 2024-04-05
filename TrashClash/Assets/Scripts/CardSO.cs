@@ -18,6 +18,7 @@ namespace CardHouse
         public int Value; //power kalo bener kategori
         public int Penalty; //power kalo salah kategori
         public int None; //power kalo belom ada kategori
+        public int Debuff; //ngurangin power lawan kalo bener kategori
         public TrashType Kategori;
         public Sprite Art;
     }

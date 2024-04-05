@@ -11,6 +11,7 @@ namespace CardHouse
         public int Value { get; private set; }
         public int Penalty { get; private set; }
         public int None { get; private set; }
+        public int Debuff { get; private set; }
 
         public override void Apply(CardDefinition data)
         {
@@ -25,6 +26,8 @@ namespace CardHouse
                 Value = trashCard.Value;
                 Penalty = trashCard.Penalty;
                 Kategori = trashCard.Kategori;
+                None = trashCard.None;
+                Debuff = trashCard.Debuff;
             }
         }
     }

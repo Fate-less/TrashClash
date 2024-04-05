@@ -17,5 +17,6 @@ MonoBehaviour:
   Value: 3
   Penalty: 1
   None: 3
+  Debuff: 0
   Kategori: 1
-  Art: {fileID: 21300000, guid: e9f9c609e89eda349abd734ea50855ce, type: 3}
+  Art: {fileID: 21300000, guid: 89737d8e50057bd4ea405194a8a9196f, type: 3}
