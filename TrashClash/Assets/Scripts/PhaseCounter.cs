@@ -1,11 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PhaseCounter : MonoBehaviour
 {
     private int phaseCount = 1;
     public RandomLocation randomLocation;
+    public Text phaseLabel;
 
     public PowerCounter p1area1;
     public PowerCounter p1area2;
@@ -17,6 +20,9 @@ public class PhaseCounter : MonoBehaviour
     public GameObject image1;
     public GameObject image2;
     public GameObject image3;
+
+    public GameObject p1win;
+    public GameObject p2win;
 
     private void Start()
     {
@@ -33,6 +39,7 @@ public class PhaseCounter : MonoBehaviour
             image1.GetComponent<Animator>().enabled = true;
             image1.GetComponent<TempatSampahAnim>().FirstLocationAnim();
         }
+        DisplayCount();
     }
     public void CountUp()
     {
@@ -57,6 +64,33 @@ public class PhaseCounter : MonoBehaviour
                 image3.GetComponent<TempatSampahAnim>().ThirdLocationAnim();
             }
         }
+        else if(phaseCount >= 6)
+        {
+            if((p1area1.power + p1area2.power + p1area3.power) > 
+                (p2area1.power + p2area2.power + p2area3.power))
+            {
+                p1win.SetActive(true);
+                StartCoroutine(BackToMenuCountDown());
+            }
+            else if ((p1area1.power + p1area2.power + p1area3.power) <
+                (p2area1.power + p2area2.power + p2area3.power))
+            {
+                p2win.SetActive(true);
+                StartCoroutine(BackToMenuCountDown());
+            }
+        }
+        DisplayCount();
+    }
+
+    void DisplayCount()
+    {
+        phaseLabel.text = "TURN " + phaseCount.ToString();
+    }
+
+    IEnumerator BackToMenuCountDown()
+    {
+        yield return new WaitForSeconds(5);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

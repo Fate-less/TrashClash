@@ -1,12 +1,13 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace CardHouse
 {
     public class CurrencyUI : MonoBehaviour
     {
         public Image Image;
-        public Text Text;
+        public TextMeshProUGUI Text;
 
         public void Apply(CurrencyContainer resource)
         {
