@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
-  m_Name: Pup kuda
+  m_Name: Tulang ayam
   m_EditorClassIdentifier: 
   BackArt: {fileID: 0}
-  Cost: 6
-  Value: 13
-  Penalty: 10
-  None: 13
+  Cost: 5
+  Value: 8
+  Penalty: 3
+  None: 8
   Debuff: 0
   Kategori: 1
-  Art: {fileID: 21300000, guid: 4390615a57083cf4fbcdd400bde62add, type: 3}
+  Art: {fileID: 21300000, guid: abe108b13129b5646a0ce3c6ff85138a, type: 3}

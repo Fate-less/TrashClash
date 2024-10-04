@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
-  m_Name: Daun gugur
+  m_Name: Nasi aking
   m_EditorClassIdentifier: 
   BackArt: {fileID: 0}
-  Cost: 2
+  Cost: 1
   Value: 2
   Penalty: 1
-  None: 2
+  None: 1
   Debuff: 0
   Kategori: 1
-  Art: {fileID: 21300000, guid: 73041a2082d794c4e85af67776a2219c, type: 3}
+  Art: {fileID: 21300000, guid: 27ccaab073d537046830dfcdd27a06d1, type: 3}
