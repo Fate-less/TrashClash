@@ -335,6 +335,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6462243022253552644, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
       insertIndex: -1
       addedObject: {fileID: -1295618067258034867}
+    - targetCorrespondingSourceObject: {fileID: 6462243022253552644, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8439960762190793979}
+    - targetCorrespondingSourceObject: {fileID: 6462243022253552644, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8525358132525980892}
   m_SourcePrefab: {fileID: 100100000, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
 --- !u!212 &1455312609447004945 stripped
 SpriteRenderer:
@@ -536,6 +542,49 @@ MonoBehaviour:
   costGate: {fileID: 0}
   cardCost: {fileID: 0}
   costActivated: 0
+--- !u!114 &8439960762190793979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455312610490005346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf98d223d333f0e42961fd6ead7e9bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8525358132525980892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455312610490005346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78a555a08b3f005408f3e593581971f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  OnHover:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8439960762190793979}
+        m_TargetAssemblyTypeName: ShowDescription, Assembly-CSharp
+        m_MethodName: ShowCardDesc
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnUnHover:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &5952402479367488665 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2235789090670168063, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}

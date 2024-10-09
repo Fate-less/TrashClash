@@ -18,5 +18,7 @@ MonoBehaviour:
   Penalty: 3
   None: 8
   Debuff: 0
+  Description: Mendapatkan -5 kekuatan bila diletakkan di lokasi yang berbeda dengan
+    kategorinya
   Kategori: 1
   Art: {fileID: 21300000, guid: 77eb12ffab0e5f24ab26e614b70a8059, type: 3}

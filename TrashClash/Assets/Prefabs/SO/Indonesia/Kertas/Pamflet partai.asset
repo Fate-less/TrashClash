@@ -18,5 +18,8 @@ MonoBehaviour:
   Penalty: 4
   None: 8
   Debuff: 0
+  Description: '"Mendapatkan +2 kekuatan di semua lokasi bila diletakkan di lokasi
+    yang sama dengan kategorinya Mendapatkan -4 kekuatan di lokasi lain bila diletakkan
+    di lokasi yang berbeda dengan kategorinya"'
   Kategori: 3
   Art: {fileID: 21300000, guid: 62f296f2e13ccb64bbfa8cd97cd412bf, type: 3}
