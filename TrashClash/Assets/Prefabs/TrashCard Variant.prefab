@@ -252,6 +252,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: c8cf28728187ef64f8f945f5ff390a9f, type: 3}
+    - target: {fileID: 6462243021699527057, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6462243022253552644, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
       propertyPath: m_Name
       value: TrashCard Variant
@@ -529,6 +533,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b033ba02e9991e44180431920f770408, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  costGate: {fileID: 0}
   cardCost: {fileID: 0}
   costActivated: 0
 --- !u!114 &5952402479367488665 stripped
