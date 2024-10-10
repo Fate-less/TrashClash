@@ -14,6 +14,7 @@ public class PowerCounter : MonoBehaviour
     public CardGroup[] slot;
     public int power;
     public int[] powers;
+    int tempPower = 0;
 
     public void CountPower()
     {
@@ -43,7 +44,7 @@ public class PowerCounter : MonoBehaviour
                             {
                                 if (j != i)
                                 {
-                                    allyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                                    allyCounter[j].tempPower += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
                                 }
                             }
                         }
@@ -56,7 +57,7 @@ public class PowerCounter : MonoBehaviour
                             {
                                 if (j != i)
                                 {
-                                    enemyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                                    enemyCounter[j].tempPower += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
                                 }
                             }
                         }
@@ -78,8 +79,8 @@ public class PowerCounter : MonoBehaviour
                                 if (j != i)
                                 {
                                     if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.FalseCategory)
-                                    { allyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
-                                    else { allyCounter[j].power -= slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
+                                    { allyCounter[j].tempPower += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
+                                    else { allyCounter[j].tempPower -= slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
                                 }
                             }
                         }
@@ -92,7 +93,7 @@ public class PowerCounter : MonoBehaviour
                             {
                                 if (j != i)
                                 {
-                                    enemyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                                    enemyCounter[j].tempPower += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
                                 }
                             }
                         }
@@ -102,7 +103,16 @@ public class PowerCounter : MonoBehaviour
             }
             catch { }
         }
-        int tempPower = 0;
+        for(int i = 0; i < 3; i++)
+        {
+            allyCounter[i].tempPower = 0;
+            for(int j = 0; j < 4; j++)
+            {
+                allyCounter[i].tempPower += allyCounter[i].powers[j];
+            }
+            allyCounter[i].power = allyCounter[i].tempPower;
+        }
+        tempPower = 0;
         for (int i = 0; i < 4; i++)
         {
             tempPower += powers[i];
@@ -113,6 +123,10 @@ public class PowerCounter : MonoBehaviour
     public void DisplayPower()
     {
         powerLabel.text = power.ToString();
+        for(int i = 0; i < 3; i++)
+        {
+            allyCounter[i].powerLabel.text = allyCounter[i].power.ToString();
+        }
     }
 
     private void Update()

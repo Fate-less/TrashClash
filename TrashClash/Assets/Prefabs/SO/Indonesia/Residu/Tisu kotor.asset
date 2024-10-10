@@ -17,8 +17,14 @@ MonoBehaviour:
   Value: 4
   Penalty: 2
   None: 2
-  Debuff: 2
+  Buff: -2
   Description: Mendapatkan +2 kekuatan di lokasinya dan -2 kekuatan di lokasi musuh
     bila diletakkan di lokasi yang sesuai dengan kategorinya
   Kategori: 4
   Art: {fileID: 21300000, guid: 88351ee306f33cd40886b85ed6ba7651, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

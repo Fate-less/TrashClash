@@ -17,9 +17,15 @@ MonoBehaviour:
   Value: 1
   Penalty: 0
   None: 1
-  Debuff: 1
+  Buff: -1
   Description: '"Musuh mendapatkan -1 kekuatan di semua lokasi bila diletakkan di
     lokasi yang sesuai dengan kategorinya Mendapatkan -1 kekuatan di semua lokasi
     bila diletakkan di lokasi yang berbeda dengan kategorinya"'
   Kategori: 4
   Art: {fileID: 21300000, guid: c69303669d3caa841919cf00f33793c9, type: 3}
+  affectAllyArea: 1
+  affectAllyAmount: -1
+  affectAllyCondition: 1
+  affectEnemyArea: 1
+  affectEnemyAmount: -1
+  affectEnemyCondition: 0

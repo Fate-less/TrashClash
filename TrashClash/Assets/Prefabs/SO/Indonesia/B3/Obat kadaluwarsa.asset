@@ -17,9 +17,15 @@ MonoBehaviour:
   Value: 20
   Penalty: 8
   None: 13
-  Debuff: 0
+  Buff: 0
   Description: '"Mendapatkan +7 kekuatan di semua lokasi bila diletakkan di lokasi
     yang sesuai dengan kategorinya Mendapatkan -5 kekuatan di semua lokasi bila diletakkan
     di lokasi yang berbeda dengan kategorinya"'
   Kategori: 5
   Art: {fileID: 21300000, guid: 31972a14b4d9fed4099891efd0c47d0d, type: 3}
+  affectAllyArea: 1
+  affectAllyAmount: 5
+  affectAllyCondition: 2
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0
