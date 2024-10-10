@@ -34,7 +34,15 @@ public class PowerCounter : MonoBehaviour
                 if (kategoriArea == slot1.MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                 {
                     power1 = slot1.MountedCards[0].GetComponent<TrashCard>().Value;
+                    //Debuff
                     enemyCounter.power1 -= slot1.MountedCards[0].GetComponent<TrashCard>().Debuff;
+                    //affectAlly
+                    if (slot1.MountedCards[0].GetComponent<TrashCard>().affectAllyArea)
+                    {
+                        power1 -= slot1.MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                        power2 -= slot1.MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                        power3 -= slot1.MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                    }
                 }
                 else if(kategoriArea == "None")
                 {

@@ -13,6 +13,10 @@ namespace CardHouse
         public int None { get; private set; }
         public int Debuff { get; private set; }
         public string Description { get; private set; }
+        public bool affectAllyArea { get; private set; }
+        public int affectAllyAmount { get; private set; }
+        public bool affectEnemyArea { get; private set; }
+        public int affectEnemyAmount { get; private set; }
 
         public override void Apply(CardDefinition data)
         {
@@ -30,6 +34,10 @@ namespace CardHouse
                 None = trashCard.None;
                 Debuff = trashCard.Debuff;
                 Description = trashCard.Description;
+                affectAllyArea = trashCard.affectAllyArea;
+                affectAllyAmount = trashCard.affectAllyAmount;
+                affectEnemyArea = trashCard.affectEnemyArea;
+                affectEnemyAmount = trashCard.affectEnemyAmount;
             }
         }
     }

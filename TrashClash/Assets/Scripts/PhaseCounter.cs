@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class PhaseCounter : MonoBehaviour
 {
     private int phaseCount = 1;
+    private int winnerCounter;
     public RandomLocation randomLocation;
     public Text phaseLabel;
 
@@ -64,16 +65,20 @@ public class PhaseCounter : MonoBehaviour
                 image3.GetComponent<TempatSampahAnim>().ThirdLocationAnim();
             }
         }
-        else if(phaseCount >= 6)
+        else if(phaseCount > 6)
         {
-            if((p1area1.power + p1area2.power + p1area3.power) > 
-                (p2area1.power + p2area2.power + p2area3.power))
+            if(p1area1.power > p2area1.power) {winnerCounter++;}
+            else {winnerCounter--;}
+            if (p1area2.power > p2area2.power) {winnerCounter++;}
+            else {winnerCounter--;}
+            if (p1area3.power > p2area3.power) {winnerCounter++;}
+            else {winnerCounter--;}
+            if (winnerCounter > 0)
             {
                 p1win.SetActive(true);
                 StartCoroutine(BackToMenuCountDown());
             }
-            else if ((p1area1.power + p1area2.power + p1area3.power) <
-                (p2area1.power + p2area2.power + p2area3.power))
+            else 
             {
                 p2win.SetActive(true);
                 StartCoroutine(BackToMenuCountDown());
