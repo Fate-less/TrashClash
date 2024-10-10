@@ -17,8 +17,14 @@ MonoBehaviour:
   Value: 13
   Penalty: 10
   None: 13
-  Debuff: 0
+  Buff: 0
   Description: Mendapatkan -3 kekuatan di semua lokasi bila lokasi kartu ini tidak
     sesuai dengan kategori kartu
   Kategori: 1
   Art: {fileID: 21300000, guid: 4390615a57083cf4fbcdd400bde62add, type: 3}
+  affectAllyArea: 1
+  affectAllyAmount: -3
+  affectAllyCondition: 1
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

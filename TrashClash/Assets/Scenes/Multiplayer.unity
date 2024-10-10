@@ -1696,18 +1696,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8a5270245958345aef014faa715be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCounter: {fileID: 1612478041}
+  enemyCounter:
+  - {fileID: 1606490637}
+  - {fileID: 1072923372}
+  - {fileID: 1612478041}
+  allyCounter:
+  - {fileID: 258621067}
+  - {fileID: 1531855714}
+  - {fileID: 1639965079}
   kategoriArea: None
   powerLabel: {fileID: 657425230}
-  slot1: {fileID: 88213123}
-  slot2: {fileID: 1435391825}
-  slot3: {fileID: 479660115}
-  slot4: {fileID: 889043822}
+  slot:
+  - {fileID: 88213123}
+  - {fileID: 1435391825}
+  - {fileID: 479660115}
+  - {fileID: 889043822}
   power: 0
-  power1: 0
-  power2: 0
-  power3: 0
-  power4: 0
+  powers: 00000000000000000000000000000000
 --- !u!1001 &273845632
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4827,18 +4832,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8a5270245958345aef014faa715be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCounter: {fileID: 1531855714}
+  enemyCounter:
+  - {fileID: 1639965079}
+  - {fileID: 1531855714}
+  - {fileID: 258621067}
+  allyCounter:
+  - {fileID: 1606490637}
+  - {fileID: 1072923372}
+  - {fileID: 1612478041}
   kategoriArea: None
   powerLabel: {fileID: 208369597}
-  slot1: {fileID: 476282049}
-  slot2: {fileID: 610540396}
-  slot3: {fileID: 1280094739}
-  slot4: {fileID: 1793389727}
+  slot:
+  - {fileID: 476282049}
+  - {fileID: 610540396}
+  - {fileID: 1280094739}
+  - {fileID: 1793389727}
   power: 0
-  power1: 0
-  power2: 0
-  power3: 0
-  power4: 0
+  powers: 00000000000000000000000000000000
 --- !u!1 &1084053393 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2072951708102739587, guid: 8ef9c204c9cbcf643a6eb79764f29c97, type: 3}
@@ -7038,18 +7048,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8a5270245958345aef014faa715be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCounter: {fileID: 1072923372}
+  enemyCounter:
+  - {fileID: 1606490637}
+  - {fileID: 1072923372}
+  - {fileID: 1612478041}
+  allyCounter:
+  - {fileID: 258621067}
+  - {fileID: 1531855714}
+  - {fileID: 1639965079}
   kategoriArea: None
   powerLabel: {fileID: 1535793825}
-  slot1: {fileID: 369216983}
-  slot2: {fileID: 1887969485}
-  slot3: {fileID: 18257347}
-  slot4: {fileID: 183361754}
+  slot:
+  - {fileID: 369216983}
+  - {fileID: 1887969485}
+  - {fileID: 18257347}
+  - {fileID: 183361754}
   power: 0
-  power1: 0
-  power2: 0
-  power3: 0
-  power4: 0
+  powers: 00000000000000000000000000000000
 --- !u!1 &1535793823
 GameObject:
   m_ObjectHideFlags: 0
@@ -7543,18 +7558,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8a5270245958345aef014faa715be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCounter: {fileID: 1639965079}
+  enemyCounter:
+  - {fileID: 1639965079}
+  - {fileID: 1531855714}
+  - {fileID: 258621067}
+  allyCounter:
+  - {fileID: 1606490637}
+  - {fileID: 1072923372}
+  - {fileID: 1612478041}
   kategoriArea: None
   powerLabel: {fileID: 2077083423}
-  slot1: {fileID: 1708355887}
-  slot2: {fileID: 1716519413}
-  slot3: {fileID: 2087399761}
-  slot4: {fileID: 1948791195}
+  slot:
+  - {fileID: 1708355887}
+  - {fileID: 1716519413}
+  - {fileID: 2087399761}
+  - {fileID: 1948791195}
   power: 0
-  power1: 0
-  power2: 0
-  power3: 0
-  power4: 0
+  powers: 00000000000000000000000000000000
 --- !u!1 &1612478039
 GameObject:
   m_ObjectHideFlags: 0
@@ -7606,18 +7626,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8a5270245958345aef014faa715be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCounter: {fileID: 258621067}
+  enemyCounter:
+  - {fileID: 1639965079}
+  - {fileID: 1531855714}
+  - {fileID: 258621067}
+  allyCounter:
+  - {fileID: 1606490637}
+  - {fileID: 1072923372}
+  - {fileID: 1612478041}
   kategoriArea: None
   powerLabel: {fileID: 2078968443}
-  slot1: {fileID: 975638595}
-  slot2: {fileID: 1494028191}
-  slot3: {fileID: 2041646628}
-  slot4: {fileID: 1225289964}
+  slot:
+  - {fileID: 975638595}
+  - {fileID: 1494028191}
+  - {fileID: 2041646628}
+  - {fileID: 1225289964}
   power: 0
-  power1: 0
-  power2: 0
-  power3: 0
-  power4: 0
+  powers: 00000000000000000000000000000000
 --- !u!1001 &1614760101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7944,18 +7969,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8a5270245958345aef014faa715be3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyCounter: {fileID: 1606490637}
+  enemyCounter:
+  - {fileID: 1606490637}
+  - {fileID: 1072923372}
+  - {fileID: 1612478041}
+  allyCounter:
+  - {fileID: 258621067}
+  - {fileID: 1531855714}
+  - {fileID: 1639965079}
   kategoriArea: None
   powerLabel: {fileID: 117874737}
-  slot1: {fileID: 1548921749}
-  slot2: {fileID: 551517583}
-  slot3: {fileID: 713262861}
-  slot4: {fileID: 1882507411}
+  slot:
+  - {fileID: 1548921749}
+  - {fileID: 551517583}
+  - {fileID: 713262861}
+  - {fileID: 1882507411}
   power: 0
-  power1: 0
-  power2: 0
-  power3: 0
-  power4: 0
+  powers: 00000000000000000000000000000000
 --- !u!1 &1660753621
 GameObject:
   m_ObjectHideFlags: 0
@@ -14934,12 +14964,12 @@ SceneRoots:
   - {fileID: 1724480961}
   - {fileID: 1684115155}
   - {fileID: 163788786}
-  - {fileID: 1126183954}
   - {fileID: 365971212}
   - {fileID: 446034968}
   - {fileID: 1021795389}
   - {fileID: 1127015126}
   - {fileID: 965256901}
+  - {fileID: 1126183954}
   - {fileID: 1322422131}
   - {fileID: 347125299}
   - {fileID: 2130077456}

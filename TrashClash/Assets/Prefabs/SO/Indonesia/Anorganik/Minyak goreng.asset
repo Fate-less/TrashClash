@@ -15,11 +15,17 @@ MonoBehaviour:
   BackArt: {fileID: 0}
   Cost: 5
   Value: 8
-  Penalty: 6
+  Penalty: 8
   None: 8
-  Debuff: 2
+  Buff: -2
   Description: '"Mendapatkan -3 kekuatan di lokasi lain bila diletakkan di lokasi
     yang berbeda dengan kategorinya Musuh mendapatkan -2 kekuatan pada setiap lokasi
     bila diletakkan pada lokasi yang sama dengan kategorinya"'
   Kategori: 2
   Art: {fileID: 21300000, guid: 63428246e3e85754dac13662c8731567, type: 3}
+  affectAllyArea: 1
+  affectAllyAmount: -3
+  affectAllyCondition: 1
+  affectEnemyArea: 1
+  affectEnemyAmount: -2
+  affectEnemyCondition: 0

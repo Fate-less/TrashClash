@@ -11,12 +11,14 @@ namespace CardHouse
         public int Value { get; private set; }
         public int Penalty { get; private set; }
         public int None { get; private set; }
-        public int Debuff { get; private set; }
+        public int Buff { get; private set; }
         public string Description { get; private set; }
         public bool affectAllyArea { get; private set; }
         public int affectAllyAmount { get; private set; }
+        public ActiveCondition affectAllyCondition { get; private set; }
         public bool affectEnemyArea { get; private set; }
         public int affectEnemyAmount { get; private set; }
+        public ActiveCondition affectEnemyCondition { get; private set; }
 
         public override void Apply(CardDefinition data)
         {
@@ -32,7 +34,7 @@ namespace CardHouse
                 Penalty = trashCard.Penalty;
                 Kategori = trashCard.Kategori;
                 None = trashCard.None;
-                Debuff = trashCard.Debuff;
+                Buff = trashCard.Buff;
                 Description = trashCard.Description;
                 affectAllyArea = trashCard.affectAllyArea;
                 affectAllyAmount = trashCard.affectAllyAmount;
