@@ -25,7 +25,7 @@ MonoBehaviour:
   Art: {fileID: 21300000, guid: c3a5a937aab648b429734c6495c689f7, type: 3}
   affectAllyArea: 1
   affectAllyAmount: 2
-  affectAllyCondition: 0
+  affectAllyCondition: 1
   affectEnemyArea: 1
   affectEnemyAmount: -2
   affectEnemyCondition: 0

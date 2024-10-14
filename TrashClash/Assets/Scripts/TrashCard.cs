@@ -37,9 +37,11 @@ namespace CardHouse
                 Buff = trashCard.Buff;
                 Description = trashCard.Description;
                 affectAllyArea = trashCard.affectAllyArea;
+                affectAllyCondition = trashCard.affectAllyCondition;
                 affectAllyAmount = trashCard.affectAllyAmount;
                 affectEnemyArea = trashCard.affectEnemyArea;
                 affectEnemyAmount = trashCard.affectEnemyAmount;
+                affectEnemyCondition = trashCard.affectEnemyCondition;
             }
         }
     }
