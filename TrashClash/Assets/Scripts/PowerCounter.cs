@@ -17,124 +17,118 @@ public class PowerCounter : MonoBehaviour
 
     public void CountPower()
     {
-        for (int i = 0; i < 3; i++)
-        {
-            allyCounter[i].power = 0;
-            for (int j = 0; j < 4; j++)
-            {
-                allyCounter[i].powers[j] = 0;
-            }
-        }
         //try renew
         for (int i = 0; i < 4; i++)
         {
             try
             {
-                if (slot[i].MountedCards[0] != null)    
+                if(slot[i].MountedCards.Count == 0)
                 {
-                    Debug.Log("Recount");
-                    //ngitung power for each slot
-                    if (kategoriArea == slot[i].MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
+                    powers[i] = 0;
+                }
+                else
+                {
+                    if (slot[i].MountedCards[0].GetComponent<DragDetector>().IsActive)
                     {
-                        powers[i] = slot[i].MountedCards[0].GetComponent<TrashCard>().Value;
-                        //Debuff
-                        enemyCounter[GetArray()].power += slot[i].MountedCards[0].GetComponent<TrashCard>().Buff;
-                        //affectAlly
-                        if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyArea && 
-                            slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.TrueCategory ||
-                            slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.BothCategory)
+                        Debug.Log("Recount: " + slot[i].MountedCards.Count);
+                        //ngitung power for each slot
+                        if (kategoriArea == slot[i].MountedCards[0].GetComponent<TrashCard>().Kategori.ToString())
                         {
-                            for (int j = i; j < 3; j++)
+                            powers[i] += slot[i].MountedCards[0].GetComponent<TrashCard>().Value;
+                            //Debuff
+                            enemyCounter[GetArray()].power += slot[i].MountedCards[0].GetComponent<TrashCard>().Buff;
+                            //affectAlly
+                            if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyArea &&
+                                slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.TrueCategory ||
+                                slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.BothCategory)
                             {
-                                if(j != GetArray())
+                                for (int j = i; j < 3; j++)
                                 {
-                                    Debug.Log(slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition);
-                                    Debug.Log("affect ally same category");
-                                    allyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                                    if (j != GetArray())
+                                    {
+                                        Debug.Log(slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition);
+                                        Debug.Log("affect ally same category");
+                                        allyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount;
+                                    }
+                                }
+                            }
+                            //affectEnemy
+                            if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyArea &&
+                                slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.TrueCategory ||
+                                slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.BothCategory)
+                            {
+                                for (int j = 0; j < 3; j++)
+                                {
+                                    if (j != GetArray())
+                                    {
+                                        Debug.Log("affect enemy same category");
+                                        enemyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyAmount;
+                                    }
                                 }
                             }
                         }
-                        //affectEnemy
-                        if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyArea &&
-                            slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.TrueCategory ||
-                            slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.BothCategory)
+                        else if (kategoriArea == "None")
                         {
-                            for (int j = 0; j < 3; j++)
+                            Debug.Log("location unknown");
+                            powers[i] = slot[i].MountedCards[0].GetComponent<TrashCard>().None;
+                        }
+                        else
+                        {
+                            powers[i] = slot[i].MountedCards[0].GetComponent<TrashCard>().Penalty;
+                            //affectAlly
+                            if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyArea &&
+                                (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.FalseCategory ||
+                                slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.BothCategory))
                             {
-                                if(j != GetArray())
+                                for (int j = 0; j < 3; j++)
                                 {
-                                    Debug.Log("affect enemy same category");
-                                    enemyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyAmount;
+                                    if (j != GetArray())
+                                    {
+                                        Debug.Log("affect ally false category");
+                                        if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.FalseCategory)
+                                        { allyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
+                                        else { allyCounter[j].power -= slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
+                                    }
                                 }
                             }
-                        }
-                    }
-                    else if (kategoriArea == "None")
-                    {
-                        Debug.Log("location unknown");
-                        powers[i] = slot[i].MountedCards[0].GetComponent<TrashCard>().None;
-                    }
-                    else
-                    {
-                        powers[i] = slot[i].MountedCards[0].GetComponent<TrashCard>().Penalty;
-                        //affectAlly
-                        if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyArea &&
-                            (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.FalseCategory ||
-                            slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.BothCategory))
-                        {
-                            for (int j = 0; j < 3; j++)
+                            //affectEnemy
+                            if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyArea &&
+                                slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.FalseCategory ||
+                                slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.BothCategory)
                             {
-                                if(j != GetArray())
+                                for (int j = 0; j < 3; j++)
                                 {
-                                    Debug.Log("affect ally false category");
-                                    if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyCondition == ActiveCondition.FalseCategory)
-                                    { allyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
-                                    else { allyCounter[j].power -= slot[i].MountedCards[0].GetComponent<TrashCard>().affectAllyAmount; }
-                                }
-                            }
-                        }
-                        //affectEnemy
-                        if (slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyArea &&
-                            slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.FalseCategory ||
-                            slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyCondition == ActiveCondition.BothCategory)
-                        {
-                            for (int j = 0; j < 3; j++)
-                            {
-                                if(j != GetArray())
-                                {
-                                    Debug.Log("affect ally false category");
-                                    enemyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyAmount;
+                                    if (j != GetArray())
+                                    {
+                                        Debug.Log("affect ally false category");
+                                        enemyCounter[j].power += slot[i].MountedCards[0].GetComponent<TrashCard>().affectEnemyAmount;
+                                    }
                                 }
                             }
                         }
                     }
                 }
-                else 
-                { Debug.Log("empty slot"); powers[i] = 0; }
             }
             catch { }
         }
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
         {
-            for(int j = 0; j < 4; j++)
+            if(powers[i] != 0)
             {
-                allyCounter[i].power += allyCounter[i].powers[j];
+                if (slot[i].MountedCards[0].GetComponent<DragDetector>().IsActive)
+                {
+                    power += powers[i];
+                }
             }
-        }   
+        }
     }
 
     public void DisplayPower()
     {
-        powerLabel.text = power.ToString();
-        for(int i = 0; i < 3; i++)
+        for (int i = 0; i < 3; i++)
         {
             allyCounter[i].powerLabel.text = allyCounter[i].power.ToString();
         }
-    }
-
-    private void Update()
-    {
-        DisplayPower();
     }
 
     public void LockCard()
