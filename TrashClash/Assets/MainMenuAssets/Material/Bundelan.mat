@@ -75,7 +75,7 @@ Material:
     - _DstBlend: 0
     - _FresnelBrightness: 0
     - _FresnelPower: 0
-    - _FresnelShadowDropoff: 0.373
+    - _FresnelShadowDropoff: 0
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
@@ -97,12 +97,12 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.18700601, g: 0.19843714, b: 0.3886792, a: 1}
+    - _Color: {r: 0.2090922, g: 0.21227942, b: 0.4415095, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 0.34901962, g: 0.42352945, b: 0.6, a: 1}
-    - _HighColor: {r: 0.5073193, g: 0.6562634, b: 0.7660377, a: 1}
-    - _LowColor: {r: 0.049557377, g: 0.041502304, b: 0.2528302, a: 1}
-    - _OutlineColor: {r: 0.011176077, g: 0.0030544624, b: 0.14716971, a: 1}
-    - _RimColor: {r: 0.039409027, g: 0.051778655, b: 0.16981131, a: 1}
+    - _HighColor: {r: 0.38509783, g: 0.41248664, b: 0.4566037, a: 1}
+    - _LowColor: {r: 0.10901383, g: 0.11188874, b: 0.23018861, a: 1}
+    - _OutlineColor: {r: 0.011764707, g: 0.011764707, b: 0.039215688, a: 1}
+    - _RimColor: {r: 0.04765394, g: 0.050915476, b: 0.08679241, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1

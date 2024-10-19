@@ -97,12 +97,12 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.35618943, g: 0.509434, b: 0.3220007, a: 1}
+    - _Color: {r: 0.30645362, g: 0.3433962, b: 0.16781059, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HighColor: {r: 0.67091125, g: 0.735849, b: 0.598398, a: 1}
-    - _LowColor: {r: 0.107433215, g: 0.2981131, b: 0.16065401, a: 1}
-    - _OutlineColor: {r: 0.021893881, g: 0.15471691, b: 0.07725446, a: 1}
-    - _RimColor: {r: 0.1436861, g: 0.2603773, b: 0.10169452, a: 1}
+    - _HighColor: {r: 0.5205398, g: 0.5396226, b: 0.34922743, a: 1}
+    - _LowColor: {r: 0.21171567, g: 0.2754717, b: 0.09927376, a: 1}
+    - _OutlineColor: {r: 0.007843138, g: 0.09411766, b: 0.054901965, a: 1}
+    - _RimColor: {r: 0.08876021, g: 0.11698109, b: 0.026265552, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
