@@ -7,6 +7,36 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Belakang bata
+    second: {fileID: 2100000, guid: 1c1d0527e2cc3a847b3528f819149b9e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Colokan
+    second: {fileID: 2100000, guid: de763b8b2e2bd3c408d590cfc48d75b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame
+    second: {fileID: 2100000, guid: 84017b81527bd1d4e8c071644cbd8b3a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grey
+    second: {fileID: 2100000, guid: 705de7c95e4f7fa47b3848d927e4609e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IjoPipa
+    second: {fileID: 2100000, guid: 84b6d55070629e64d8a3308ef9592c19, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Iron
+    second: {fileID: 2100000, guid: 29b5f5dcd6c1e1e418976a4054c6ff56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Jalan'
     second: {fileID: 2100000, guid: 7c9dd0e318d9b81489b7d3efb7271d9b, type: 2}
   - first:
@@ -42,13 +72,48 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Pintu
+    second: {fileID: 2100000, guid: c43042636aa16d242a66a487eed09c77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PintuBlack
+    second: {fileID: 2100000, guid: 7056ce94f53830c4ea883899cad3b793, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PintuSecondary
+    second: {fileID: 2100000, guid: b1caae8ca0b373441abde7e3abbaa2fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: PlastikSampah
     second: {fileID: 2100000, guid: 633788dd1f8781746a4d1946f0615959, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: 37df8558b6c982648aa11087e4973bfc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Roda
+    second: {fileID: 2100000, guid: 0f69f2cde2225174f8b84cabc961cc4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: TrashBin
     second: {fileID: 2100000, guid: 53edc46e3eebabe49896409b1dd6dddf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 238b0dc485176ab409d0e2545c2b9b41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood
+    second: {fileID: 2100000, guid: 0b9d384a8c33f9843ac4bc2fb919522e, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

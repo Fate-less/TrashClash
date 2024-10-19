@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Pipa
-  m_Shader: {fileID: 4800000, guid: 9e0b78a84584ffb4b9d963b4c6f26436, type: 3}
+  m_Shader: {fileID: 4800000, guid: 8fa84e1c8f3a97b4bb416e8eb087630e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -85,24 +85,24 @@ Material:
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 10
+    - _OutlineSize: 25
     - _Parallax: 0.02
-    - _RampLevels: 2
-    - _RimAlpha: 0
-    - _RimDropOff: 0
-    - _RimPower: 0
+    - _RampLevels: 3
+    - _RimAlpha: 1
+    - _RimDropOff: 1
+    - _RimPower: 0.177
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.78867924, g: 0.78867924, b: 0.78867924, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FresnelColor: {r: 0.9686275, g: 0.9686275, b: 0.9686275, a: 1}
+    - _HighColor: {r: 0.96981126, g: 0.96981126, b: 0.96981126, a: 1}
+    - _LowColor: {r: 0.5622641, g: 0.5622641, b: 0.5622641, a: 1}
+    - _OutlineColor: {r: 0.2603773, g: 0.2603773, b: 0.2603773, a: 1}
+    - _RimColor: {r: 0.5018867, g: 0.5018867, b: 0.5018867, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
