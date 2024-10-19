@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Chicken_Bones
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: abe108b13129b5646a0ce3c6ff85138a, type: 3}
   Cost: 5
   Value: 8
   Penalty: 3
   None: 8
-  Debuff: 0
+  Buff: 0
+  Description: 
   Kategori: 1
   Art: {fileID: 21300000, guid: abe108b13129b5646a0ce3c6ff85138a, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

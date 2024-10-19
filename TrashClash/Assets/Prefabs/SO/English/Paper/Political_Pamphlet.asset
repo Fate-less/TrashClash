@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Political_Pamphlet
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: 0adf5b3205350b8459f71233d1c88256, type: 3}
   Cost: 5
   Value: 10
   Penalty: 4
   None: 8
-  Debuff: 0
+  Buff: 0
+  Description: 
   Kategori: 3
   Art: {fileID: 21300000, guid: 62f296f2e13ccb64bbfa8cd97cd412bf, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

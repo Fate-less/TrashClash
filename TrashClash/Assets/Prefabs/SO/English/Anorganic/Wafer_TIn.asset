@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Wafer_TIn
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: 36d443523b97b084b93c4c354247ec94, type: 3}
   Cost: 4
   Value: 8
   Penalty: 2
   None: 5
-  Debuff: 0
+  Buff: 0
+  Description: 
   Kategori: 2
   Art: {fileID: 21300000, guid: dbf52c82e21a5aa44b678e2ffe46430b, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

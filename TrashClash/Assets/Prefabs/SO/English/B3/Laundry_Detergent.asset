@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Laundry_Detergent
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: c15ad1e9397e6ed4697fba3c1e544801, type: 3}
   Cost: 1
   Value: 1
   Penalty: 0
   None: 1
-  Debuff: 0
+  Buff: 0
+  Description: 
   Kategori: 5
   Art: {fileID: 21300000, guid: 7a927205017c43c4bb3d234471ae8b52, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

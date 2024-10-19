@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Tutoring_Catalog
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: 4fa82a8f6c76ff64bb9797340add4c3b, type: 3}
   Cost: 2
   Value: 4
   Penalty: 2
   None: 2
-  Debuff: 2
+  Buff: 0
+  Description: 
   Kategori: 3
   Art: {fileID: 21300000, guid: 0aa5d78fc6c31994cb77c84ba14db7cf, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

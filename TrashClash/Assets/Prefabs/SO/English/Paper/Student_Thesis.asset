@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Student_Thesis
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: a3d8d8e70e5153744a22295cc21de550, type: 3}
   Cost: 6
   Value: 16
   Penalty: 8
   None: 13
-  Debuff: 3
+  Buff: 0
+  Description: 
   Kategori: 3
   Art: {fileID: 21300000, guid: 0b7311f56c21fc447904107e7f4c9711, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

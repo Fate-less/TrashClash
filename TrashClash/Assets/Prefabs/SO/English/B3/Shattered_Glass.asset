@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Shattered_Glass
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 21300000, guid: cbf74cc33a1e28b409bbc85fdc390509, type: 3}
+  BackArt: {fileID: 21300000, guid: a2851cb145220584485aa388fd560606, type: 3}
   Cost: 4
   Value: 8
   Penalty: 1

@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Baby_Diapers
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: 8d359757ffa833c4c966ee43c60b3f52, type: 3}
   Cost: 6
   Value: 16
   Penalty: 9
   None: 13
-  Debuff: 3
+  Buff: 0
+  Description: 
   Kategori: 4
   Art: {fileID: 21300000, guid: 656344f6af5d6f14a933c703e93a3565, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

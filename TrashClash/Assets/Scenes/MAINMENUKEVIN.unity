@@ -242,11 +242,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -6722085885383957590, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
       propertyPath: m_Intensity
-      value: 5
+      value: 27.32
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
+      propertyPath: m_Lightmapping
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -6722085885383957590, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
       propertyPath: m_Shadows.m_Type
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -6722085885383957590, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
+      propertyPath: m_BounceIntensity
+      value: 3.09
       objectReference: {fileID: 0}
     - target: {fileID: -822733097158387364, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
       propertyPath: m_LocalPosition.y

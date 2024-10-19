@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Used_Tissue
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: c516057bf2afd934b9ab5138cec2d134, type: 3}
   Cost: 2
   Value: 4
   Penalty: 2
   None: 2
-  Debuff: 2
+  Buff: 0
+  Description: 
   Kategori: 4
   Art: {fileID: 21300000, guid: 88351ee306f33cd40886b85ed6ba7651, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

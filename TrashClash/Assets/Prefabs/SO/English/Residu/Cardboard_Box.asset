@@ -12,11 +12,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Cardboard_Box
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 0}
+  BackArt: {fileID: 21300000, guid: a6d7a12fd38e24b4498390e128952ed5, type: 3}
   Cost: 5
   Value: 10
   Penalty: 6
   None: 8
-  Debuff: 2
+  Buff: 0
+  Description: 
   Kategori: 4
   Art: {fileID: 21300000, guid: c3a5a937aab648b429734c6495c689f7, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0
