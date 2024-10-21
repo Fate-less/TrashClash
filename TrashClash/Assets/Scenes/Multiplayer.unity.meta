@@ -1,14 +1,7 @@
 fileFormatVersion: 2
-guid: e97166fcadde34d4786e038ffb3a484e
+guid: 2117cd784b6cdf84cbc38cd45efa9a5a
 DefaultImporter:
   externalObjects: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 264045
-  packageName: CardHouse
-  packageVersion: 1.0.4
-  assetPath: Assets/CardHouse/SampleGames/CCG/Ccg.unity
-  uploadId: 609594
