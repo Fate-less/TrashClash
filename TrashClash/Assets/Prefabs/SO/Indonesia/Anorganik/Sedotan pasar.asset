@@ -17,8 +17,15 @@ MonoBehaviour:
   Value: 2
   Penalty: 0
   None: 2
-  Debuff: 0
+  Buff: 0
   Description: Mendapatkan -2 kekuatan bila lokasinya tidak sesuai dengan kategori
     kartu ini
   Kategori: 2
   Art: {fileID: 21300000, guid: a2f37e22bb71b5547bad726f13e297c0, type: 3}
+  DescBox: {fileID: 21300000, guid: 6717da26e900495479c7895a71cb7d53, type: 3}
+  affectAllyArea: 0
+  affectAllyAmount: 0
+  affectAllyCondition: 0
+  affectEnemyArea: 0
+  affectEnemyAmount: 0
+  affectEnemyCondition: 0

@@ -3,13 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PhaseCounter : MonoBehaviour
 {
     private int phaseCount = 1;
     private int winnerCounter;
     public RandomLocation randomLocation;
-    public Text phaseLabel;
+    public TextMeshProUGUI phaseLabel;
 
     public PowerCounter p1area1;
     public PowerCounter p1area2;
@@ -89,7 +90,7 @@ public class PhaseCounter : MonoBehaviour
 
     void DisplayCount()
     {
-        phaseLabel.text = "TURN " + phaseCount.ToString();
+        phaseLabel.text = phaseCount.ToString();
     }
 
     IEnumerator BackToMenuCountDown()

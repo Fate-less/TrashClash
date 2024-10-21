@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceed5d5c404c3754d97270ccf4ced07b, type: 3}
-  m_Name: Gems
+  m_Name: Energy
   m_EditorClassIdentifier: 
-  Name: Gems
-  Sprite: {fileID: 21300000, guid: 50fd27de45fde6840b27557aee9a7866, type: 3}
+  Name: Energy
+  Sprite: {fileID: 21300000, guid: df5497054d9e3ea49a763dcdff0c331c, type: 3}

@@ -22,6 +22,7 @@ MonoBehaviour:
     bila diletakkan di lokasi yang sesuai dengan kategorinya
   Kategori: 4
   Art: {fileID: 21300000, guid: 88351ee306f33cd40886b85ed6ba7651, type: 3}
+  DescBox: {fileID: 21300000, guid: da55560ec5c217c43a6d9b2751037a35, type: 3}
   affectAllyArea: 0
   affectAllyAmount: 0
   affectAllyCondition: 0

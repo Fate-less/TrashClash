@@ -6,6 +6,7 @@ namespace CardHouse
     {
         public SpriteRenderer Image;
         public SpriteRenderer BackImage;
+        public Sprite DescBox { get; private set; }
         public TrashType Kategori { get; private set; }
         public int Cost { get; private set; }
         public int Value { get; private set; }
@@ -24,6 +25,7 @@ namespace CardHouse
         {
             if (data is CardSO trashCard)
             {
+                DescBox = trashCard.DescBox;
                 Image.sprite = trashCard.Art;
                 if (trashCard.BackArt != null)
                 {

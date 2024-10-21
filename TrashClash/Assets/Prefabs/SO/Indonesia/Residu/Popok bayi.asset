@@ -23,6 +23,7 @@ MonoBehaviour:
     -4 kekuatan di semua lokasi bila diletakkan di lokasi yang berbeda dengan kategorinya"'
   Kategori: 4
   Art: {fileID: 21300000, guid: 656344f6af5d6f14a933c703e93a3565, type: 3}
+  DescBox: {fileID: 21300000, guid: da55560ec5c217c43a6d9b2751037a35, type: 3}
   affectAllyArea: 1
   affectAllyAmount: 4
   affectAllyCondition: 2

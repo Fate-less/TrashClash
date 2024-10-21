@@ -9,7 +9,7 @@ namespace CardHouse
 {
     public class CurrencyRegistry : MonoBehaviour
     {
-        public Text CurrentPlayerLabel;
+        public TextMeshProUGUI CurrentPlayerLabel;
 
         [FormerlySerializedAs("ResourceDisplayParent")]
         public Transform CurrencyDisplayParent;

@@ -22,6 +22,7 @@ MonoBehaviour:
     musuh bila diletakkan di lokasi yang sama dengan kategorinya
   Kategori: 3
   Art: {fileID: 21300000, guid: 0aa5d78fc6c31994cb77c84ba14db7cf, type: 3}
+  DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}
   affectAllyArea: 1
   affectAllyAmount: 2
   affectAllyCondition: 0

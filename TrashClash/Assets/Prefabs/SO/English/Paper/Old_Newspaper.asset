@@ -21,6 +21,7 @@ MonoBehaviour:
   Description: 
   Kategori: 3
   Art: {fileID: 21300000, guid: 21a804aaba990444daa3d76436e46f6d, type: 3}
+  DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}
   affectAllyArea: 0
   affectAllyAmount: 0
   affectAllyCondition: 0

@@ -31,6 +31,7 @@ namespace CardHouse
         public string Description; //deskripsi ability
         public TrashType Kategori;
         public Sprite Art;
+        public Sprite DescBox;
         public bool affectAllyArea; //ngurangin power di semua kategori ally
         [ConditionalField(nameof(affectAllyArea))] public int affectAllyAmount; //jumlah ngurangin powernya
         [ConditionalField(nameof(affectAllyArea))] public ActiveCondition affectAllyCondition; //aktif saat kondisi apa

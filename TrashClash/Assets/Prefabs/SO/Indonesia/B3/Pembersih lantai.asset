@@ -23,6 +23,7 @@ MonoBehaviour:
     yang berbeda dengan kategorinya"'
   Kategori: 5
   Art: {fileID: 21300000, guid: 8f61dc9224a85644f801c64b417a1e6f, type: 3}
+  DescBox: {fileID: 21300000, guid: 655c9b2ef6a3b9c49a500dfdec75143e, type: 3}
   affectAllyArea: 1
   affectAllyAmount: -2
   affectAllyCondition: 1
