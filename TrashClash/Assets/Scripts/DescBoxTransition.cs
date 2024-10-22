@@ -7,6 +7,7 @@ public class DescBoxTransition : MonoBehaviour
     public GameObject descriptionTab;
     public Transform closePosition;
     public Transform openPosition;
+    public bool isOnCooldown;
 
     private void Start()
     {
@@ -15,19 +16,40 @@ public class DescBoxTransition : MonoBehaviour
 
     public void ShowCardDescBox()
     {
-        LeanTween.move(descriptionTab, openPosition.position, 0.1f);
-        descriptionTab.SetActive(true);
+        if (!isOnCooldown)
+        {
+            LeanTween.move(descriptionTab, openPosition.position, 0.1f);
+            descriptionTab.SetActive(true);
+        }
     }
     public void CloseCardDescBox()
     {
-        LeanTween.move(descriptionTab, closePosition.position, 0.1f);
-        descriptionTab.SetActive(false);
+        if (!isOnCooldown)
+        {
+            LeanTween.move(descriptionTab, closePosition.position, 0.1f);
+            descriptionTab.SetActive(false);
+        }
     }
 
     IEnumerator delayOneFrame()
     {
-        yield return new WaitForSeconds(0.1f);
-        descriptionTab.SetActive(false);
-        CloseCardDescBox();
+        if (!isOnCooldown)
+        {
+            yield return new WaitForSeconds(0.1f);
+            descriptionTab.SetActive(false);
+            CloseCardDescBox();
+        }
+    }
+
+    public void PutCooldown(int duration)
+    {
+        isOnCooldown = true;
+        StartCoroutine(CooldownTimer(duration));
+    }
+
+    IEnumerator CooldownTimer(int duration)
+    {
+        yield return new WaitForSeconds(duration);
+        isOnCooldown = false;
     }
 }
