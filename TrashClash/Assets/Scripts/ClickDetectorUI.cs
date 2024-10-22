@@ -6,11 +6,9 @@ namespace CardHouse
     {
         public UnityEvent OnPress;
 
-        public GateCollection<NoParams> ClickGates;
-
         public void OnNextTurn()
         {
-            if (IsActive && ClickGates.AllUnlocked(null))
+            if (IsActive)
             {
                 OnPress.Invoke();
             }
