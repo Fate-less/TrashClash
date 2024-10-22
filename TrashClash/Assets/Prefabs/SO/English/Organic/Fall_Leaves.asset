@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Fall_Leaves
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 21300000, guid: acf5d82b438af2e4b8a699db4e0b9759, type: 3}
+  BackArt: {fileID: 0}
   Cost: 2
   Value: 2
   Penalty: 1
@@ -21,7 +21,7 @@ MonoBehaviour:
   Description: 
   Kategori: 1
   Art: {fileID: 21300000, guid: acf5d82b438af2e4b8a699db4e0b9759, type: 3}
-  DescBox: {fileID: 21300000, guid: 597d0094c2504c24ca2acb32ec348b92, type: 3}
+  DescBox: {fileID: 21300000, guid: a0e9cf792af613d4998dd665bbb21b75, type: 3}
   affectAllyArea: 0
   affectAllyAmount: 0
   affectAllyCondition: 0

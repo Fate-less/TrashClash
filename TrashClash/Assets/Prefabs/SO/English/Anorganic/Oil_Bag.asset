@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Oil_Bag
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 21300000, guid: 2efe834699ec9544c82777cc361ea9c6, type: 3}
+  BackArt: {fileID: 0}
   Cost: 5
   Value: 8
   Penalty: 6
@@ -20,8 +20,8 @@ MonoBehaviour:
   Buff: 0
   Description: 
   Kategori: 2
-  Art: {fileID: 21300000, guid: 63428246e3e85754dac13662c8731567, type: 3}
-  DescBox: {fileID: 21300000, guid: 6717da26e900495479c7895a71cb7d53, type: 3}
+  Art: {fileID: 21300000, guid: 2efe834699ec9544c82777cc361ea9c6, type: 3}
+  DescBox: {fileID: 21300000, guid: 0ee00d969afdf4c498cbd3fec0ab6494, type: 3}
   affectAllyArea: 0
   affectAllyAmount: 0
   affectAllyCondition: 0

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Old_Newspaper
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 21300000, guid: 46051908f95bf7e409e5656b503ece6b, type: 3}
+  BackArt: {fileID: 0}
   Cost: 4
   Value: 8
   Penalty: 5
@@ -20,8 +20,8 @@ MonoBehaviour:
   Buff: 0
   Description: 
   Kategori: 3
-  Art: {fileID: 21300000, guid: 21a804aaba990444daa3d76436e46f6d, type: 3}
-  DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}
+  Art: {fileID: 21300000, guid: 46051908f95bf7e409e5656b503ece6b, type: 3}
+  DescBox: {fileID: 21300000, guid: 83aafbc3dc0a0ea488ccb9160832f43f, type: 3}
   affectAllyArea: 0
   affectAllyAmount: 0
   affectAllyCondition: 0

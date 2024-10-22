@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Chewed_Gum
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 21300000, guid: cf4b92e8ca411c948adbb1f7fe7d920c, type: 3}
+  BackArt: {fileID: 0}
   Cost: 1
   Value: 1
   Penalty: 0
@@ -20,7 +20,8 @@ MonoBehaviour:
   Buff: 0
   Description: 
   Kategori: 4
-  Art: {fileID: 21300000, guid: c69303669d3caa841919cf00f33793c9, type: 3}
+  Art: {fileID: 21300000, guid: cf4b92e8ca411c948adbb1f7fe7d920c, type: 3}
+  DescBox: {fileID: 21300000, guid: 73049c91de5205342baa486edb19ec95, type: 3}
   affectAllyArea: 0
   affectAllyAmount: 0
   affectAllyCondition: 0

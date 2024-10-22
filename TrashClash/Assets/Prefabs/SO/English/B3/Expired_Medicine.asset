@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee3491b1881db7429c2bb50f1070d79, type: 3}
   m_Name: Expired_Medicine
   m_EditorClassIdentifier: 
-  BackArt: {fileID: 21300000, guid: c51c6e94c8f48ca488c65c5e6baa976d, type: 3}
+  BackArt: {fileID: 0}
   Cost: 6
   Value: 20
   Penalty: 8
@@ -20,8 +20,8 @@ MonoBehaviour:
   Buff: 0
   Description: 
   Kategori: 5
-  Art: {fileID: 21300000, guid: 31972a14b4d9fed4099891efd0c47d0d, type: 3}
-  DescBox: {fileID: 21300000, guid: 655c9b2ef6a3b9c49a500dfdec75143e, type: 3}
+  Art: {fileID: 21300000, guid: c51c6e94c8f48ca488c65c5e6baa976d, type: 3}
+  DescBox: {fileID: 21300000, guid: d9959735c4ad84e43a5da1cf6d014e74, type: 3}
   affectAllyArea: 0
   affectAllyAmount: 0
   affectAllyCondition: 0
