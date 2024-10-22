@@ -18,9 +18,9 @@ MonoBehaviour:
   Penalty: 5
   None: 5
   Buff: 0
-  Description: '"Mendapatkan +3 kekuatan di semua lokasi bila diletakkan di lokasi
-    yang sesuai dengan kategorinya Mendapatkan -4 kekuatan di lokasi lain bila diletakkan
-    di lokasi yang berbeda dengan kategorinya"'
+  Description: Kaca properti yang pecah atau rusak dapat menyebabkan cedera dan berbahaya
+    jika tidak dibuang dengan benar. Pengelolaan yang aman penting untuk mencegah
+    kecelakaan dan pencemaran.
   Kategori: 5
   Art: {fileID: 21300000, guid: cbf74cc33a1e28b409bbc85fdc390509, type: 3}
   DescBox: {fileID: 21300000, guid: 655c9b2ef6a3b9c49a500dfdec75143e, type: 3}

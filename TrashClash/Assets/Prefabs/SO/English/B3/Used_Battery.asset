@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 4
   None: 8
   Buff: 0
-  Description: 
+  Description: Used batteries contain harmful chemicals that can contaminate the
+    environment and groundwater if discarded carelessly. Improper disposal can have
+    a widespread negative impact on ecosystems.
   Kategori: 5
   Art: {fileID: 21300000, guid: 63e66c3704a87ae45977363f6334d54e, type: 3}
   DescBox: {fileID: 21300000, guid: d9959735c4ad84e43a5da1cf6d014e74, type: 3}

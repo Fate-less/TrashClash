@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 1
   None: 2
   Buff: 0
-  Description: 
+  Description: Fallen leaves are organic waste that can decompose naturally and be
+    used as compost. However, large piles can clog drainage systems and contribute
+    to flooding if not properly managed.
   Kategori: 1
   Art: {fileID: 21300000, guid: acf5d82b438af2e4b8a699db4e0b9759, type: 3}
   DescBox: {fileID: 21300000, guid: a0e9cf792af613d4998dd665bbb21b75, type: 3}

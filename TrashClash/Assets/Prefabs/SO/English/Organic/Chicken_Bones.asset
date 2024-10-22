@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 3
   None: 8
   Buff: 0
-  Description: 
+  Description: Chicken bones can be turned into fertilizer when processed correctly,
+    but improper disposal may attract wild animals and produce foul smells during
+    decomposition.
   Kategori: 1
   Art: {fileID: 21300000, guid: abe108b13129b5646a0ce3c6ff85138a, type: 3}
   DescBox: {fileID: 21300000, guid: a0e9cf792af613d4998dd665bbb21b75, type: 3}

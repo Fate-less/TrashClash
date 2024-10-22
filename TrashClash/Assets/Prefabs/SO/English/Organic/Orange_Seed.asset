@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 5
   None: 5
   Buff: 0
-  Description: 
+  Description: Orange seeds are organic waste that decompose more slowly than the
+    fruit itself. While they can be composted, they require more time to break down
+    completely.
   Kategori: 1
   Art: {fileID: 21300000, guid: 99dae048a7117ca42a5d66863c08fd04, type: 3}
   DescBox: {fileID: 21300000, guid: a0e9cf792af613d4998dd665bbb21b75, type: 3}

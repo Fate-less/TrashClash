@@ -18,8 +18,8 @@ MonoBehaviour:
   Penalty: 1
   None: 1
   Buff: 0
-  Description: Mendapatkan -1 kekuatan di lokasi lain bila diletakkan di lokasi yang
-    berbeda dengan kategorinya
+  Description: Sisa prakarya dari kertas bisa didaur ulang. Meski tampak sepele,
+    daur ulang kertas mengurangi kebutuhan akan penebangan pohon baru.
   Kategori: 3
   Art: {fileID: 21300000, guid: d4bb685430c064c48a5a881bc897c3c0, type: 3}
   DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}

@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 1
   None: 3
   Buff: 0
-  Description: 
+  Description: Banana peels decompose easily and are great for compost. However,
+    when discarded improperly, they can rot and produce methane gas, which contributes
+    to global warming.
   Kategori: 1
   Art: {fileID: 21300000, guid: 498878181d1318d468dbd5a2d7d845ad, type: 3}
   DescBox: {fileID: 21300000, guid: a0e9cf792af613d4998dd665bbb21b75, type: 3}

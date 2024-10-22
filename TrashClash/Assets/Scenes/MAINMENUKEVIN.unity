@@ -301,6 +301,7 @@ GameObject:
   - component: {fileID: 399171473}
   - component: {fileID: 399171478}
   - component: {fileID: 399171477}
+  - component: {fileID: 399171479}
   m_Layer: 0
   m_Name: Play
   m_TagString: Untagged
@@ -455,6 +456,84 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: 02bc18546279ce84d8ec393d7f4feae5, type: 2}
   - {fileID: 2100000, guid: 9c61c1d330d62ca4884d67d2850b7ddb, type: 2}
+--- !u!114 &399171479
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 399171472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8667b5385b446db4cafa0157d02f3af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 623990601}
+        m_TargetAssemblyTypeName: MenuCameraTransition, Assembly-CSharp
+        m_MethodName: OpenLevelSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ClickGates:
+    Gates: []
+--- !u!1 &623990600
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 623990602}
+  - component: {fileID: 623990601}
+  m_Layer: 0
+  m_Name: Handler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &623990601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623990600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b186b67530b28d647b29701cb9b7cafb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 1619178815}
+--- !u!4 &623990602
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623990600}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -27.838173, y: -11.3084755, z: -15.181031}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &858262456
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,6 +548,7 @@ GameObject:
   - component: {fileID: 858262457}
   - component: {fileID: 858262462}
   - component: {fileID: 858262461}
+  - component: {fileID: 858262463}
   m_Layer: 0
   m_Name: Option
   m_TagString: Untagged
@@ -623,6 +703,39 @@ MonoBehaviour:
   materials:
   - {fileID: 2100000, guid: 54fad8f703418fb49aa1229a948eced4, type: 2}
   - {fileID: 2100000, guid: 70afb085c69dea945bd79d0b020b2353, type: 2}
+--- !u!114 &858262463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858262456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8667b5385b446db4cafa0157d02f3af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsActive: 1
+  OnPress:
+    m_PersistentCalls:
+      m_Calls: []
+  OnButtonClicked:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 623990601}
+        m_TargetAssemblyTypeName: MenuCameraTransition, Assembly-CSharp
+        m_MethodName: OpenSettings
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  ClickGates:
+    Gates: []
 --- !u!1 &1108926659
 GameObject:
   m_ObjectHideFlags: 0
@@ -1028,6 +1141,11 @@ MonoBehaviour:
   m_BeforeTransparentBundles: []
   m_BeforeStackBundles: []
   m_AfterStackBundles: []
+--- !u!20 &1619178815 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: -1853094968961178454, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
+  m_PrefabInstance: {fileID: 1619178811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1038,3 +1156,4 @@ SceneRoots:
   - {fileID: 399171476}
   - {fileID: 239631118}
   - {fileID: 858262460}
+  - {fileID: 623990602}

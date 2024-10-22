@@ -18,9 +18,8 @@ MonoBehaviour:
   Penalty: 2
   None: 3
   Buff: 0
-  Description: '"Mendapatkan +1 kekuatan di semua lokasi bila diletakkan di lokasi
-    yang sesuai dengan kategorinya Mendapatkan -1 kekuatan di semua lokasi bila diletakkan
-    di lokasi yang berbeda dengan kategorinya"'
+  Description: Buku bekas yang rusak dapat didaur ulang menjadi kertas baru. Daur
+    ulang buku mengurangi jejak karbon dan limbah kertas di lingkungan.
   Kategori: 3
   Art: {fileID: 21300000, guid: 66e23e814175e6b45a3179c183757934, type: 3}
   DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}

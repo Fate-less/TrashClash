@@ -18,9 +18,9 @@ MonoBehaviour:
   Penalty: 0
   None: 1
   Buff: 0
-  Description: '"Mendapatkan +2 kekuatan bila diletakkan di lokasi yang sesuai dengan
-    kategorinya Mendapatkan -1 kekuatan bila diletakkan di lokasi yang berbeda dengan
-    kategorinya"'
+  Description: Plastik belanja sangat sulit terurai dan dapat bertahan ratusan tahun
+    di lingkungan. Plastik ini sering menyumbat saluran air dan mengancam kehidupan
+    laut.
   Kategori: 2
   Art: {fileID: 21300000, guid: 4c5bd887232528644b2e580cc201befd, type: 3}
   DescBox: {fileID: 21300000, guid: 6717da26e900495479c7895a71cb7d53, type: 3}

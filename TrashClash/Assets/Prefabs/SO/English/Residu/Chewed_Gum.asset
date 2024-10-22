@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 0
   None: 1
   Buff: 0
-  Description: 
+  Description: Chewing gum is hard to decompose and can cause environmental damage
+    if littered. It requires special handling to avoid polluting the soil and public
+    spaces.
   Kategori: 4
   Art: {fileID: 21300000, guid: cf4b92e8ca411c948adbb1f7fe7d920c, type: 3}
   DescBox: {fileID: 21300000, guid: 73049c91de5205342baa486edb19ec95, type: 3}
