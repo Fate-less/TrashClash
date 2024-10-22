@@ -868,6 +868,14 @@ PrefabInstance:
       propertyPath: m_BounceIntensity
       value: 3.09
       objectReference: {fileID: 0}
+    - target: {fileID: -4683669308469848369, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b5440ba408c84eb4e8410e8dee6321e5, type: 2}
+    - target: {fileID: -1461304994638716399, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b5440ba408c84eb4e8410e8dee6321e5, type: 2}
     - target: {fileID: -822733097158387364, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.57
@@ -926,7 +934,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2678511023249515248, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.8
+      value: 24.2
       objectReference: {fileID: 0}
     - target: {fileID: 2678511023249515248, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
       propertyPath: m_LocalPosition.y
@@ -936,8 +944,14 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 29.0978
       objectReference: {fileID: 0}
+    - target: {fileID: 3552657089646692395, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -54.3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: -506439060164748770, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
+    - {fileID: 4193411118214690850, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 65702495048144492, guid: fe379ea8ad8f21b4295c7ca44cb13f79, type: 3}
@@ -981,7 +995,7 @@ MonoBehaviour:
   subpixelMorphologicalAntialiasing:
     quality: 2
   fastApproximateAntialiasing:
-    fastMode: 0
+    fastMode: 1
     keepAlpha: 0
   fog:
     enabled: 1

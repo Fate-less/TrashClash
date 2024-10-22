@@ -7,11 +7,6 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Belakang bata
-    second: {fileID: 2100000, guid: 1c1d0527e2cc3a847b3528f819149b9e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
       name: Colokan
     second: {fileID: 2100000, guid: de763b8b2e2bd3c408d590cfc48d75b2, type: 2}
   - first:
@@ -44,26 +39,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Jalanan
     second: {fileID: 2100000, guid: 790e57c0790857444a07e2f4a7b7b283, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Merah 1
-    second: {fileID: 2100000, guid: 2fb0bce59d046794f91a0a8f77e1faaa, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Merah 2
-    second: {fileID: 2100000, guid: 56c0ecfd3a8291b49b65831f744d37c5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Merah3
-    second: {fileID: 2100000, guid: e896bba557e1d854ca428eaee48429b6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Merah4
-    second: {fileID: 2100000, guid: 1a20ed8f605f017488ef253aa4a96bf6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
