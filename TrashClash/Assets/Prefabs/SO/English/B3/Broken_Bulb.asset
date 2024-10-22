@@ -18,7 +18,8 @@ MonoBehaviour:
   Penalty: 1
   None: 3
   Buff: 0
-  Description: 
+  Description: Old lamps often contain hazardous materials like mercury. Improper
+    disposal can contaminate soil and pose health risks.
   Kategori: 5
   Art: {fileID: 21300000, guid: d18f567ad2b002c4984439966949c063, type: 3}
   DescBox: {fileID: 21300000, guid: d9959735c4ad84e43a5da1cf6d014e74, type: 3}

@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 0
   None: 2
   Buff: 0
-  Description: 
+  Description: Floor cleaners contain toxic substances that can harm the environment
+    if improperly disposed of. These substances can pollute water and soil, disrupting
+    the natural balance.
   Kategori: 5
   Art: {fileID: 21300000, guid: 2a51f36ee7eb6a14389a502ce31dd38f, type: 3}
   DescBox: {fileID: 21300000, guid: d9959735c4ad84e43a5da1cf6d014e74, type: 3}

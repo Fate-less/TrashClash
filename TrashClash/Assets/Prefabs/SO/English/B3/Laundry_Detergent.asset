@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 0
   None: 1
   Buff: 0
-  Description: 
+  Description: Laundry detergent contains chemicals that can pollute water if not
+    properly managed. These chemicals can harm aquatic ecosystems and affect groundwater
+    quality.
   Kategori: 5
   Art: {fileID: 21300000, guid: c15ad1e9397e6ed4697fba3c1e544801, type: 3}
   DescBox: {fileID: 21300000, guid: d9959735c4ad84e43a5da1cf6d014e74, type: 3}

@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 10
   None: 13
   Buff: 0
-  Description: 
+  Description: Horse manure is rich in nutrients and can be used as natural fertilizer.
+    However, when improperly discarded, it can contaminate the environment with pathogens
+    and cause unpleasant odors.
   Kategori: 1
   Art: {fileID: 21300000, guid: 60696c895d285b44796c55e22a6b8bcf, type: 3}
   DescBox: {fileID: 21300000, guid: a0e9cf792af613d4998dd665bbb21b75, type: 3}

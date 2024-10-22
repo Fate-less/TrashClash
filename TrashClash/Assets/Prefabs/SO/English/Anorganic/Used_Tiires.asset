@@ -18,7 +18,8 @@ MonoBehaviour:
   Penalty: 8
   None: 13
   Buff: 0
-  Description: 
+  Description: Used tires take an extremely long time to decompose. If burned, they
+    release harmful chemicals into the air, causing serious air pollution.
   Kategori: 2
   Art: {fileID: 21300000, guid: 10d77fa82a9a9fa4e86213043a8b00c0, type: 3}
   DescBox: {fileID: 21300000, guid: 0ee00d969afdf4c498cbd3fec0ab6494, type: 3}

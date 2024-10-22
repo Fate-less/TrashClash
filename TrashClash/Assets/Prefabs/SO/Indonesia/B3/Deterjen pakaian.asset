@@ -18,8 +18,9 @@ MonoBehaviour:
   Penalty: 0
   None: 1
   Buff: 0
-  Description: Mendapatkan -1 kekuatan di semua lokasi bila diletakkan di lokasi
-    yang berbeda dengan kategorinya
+  Description: Deterjen pakaian mengandung bahan kimia yang dapat mencemari air jika
+    tidak dikelola dengan benar. Bahan kimia ini bisa mengganggu ekosistem air dan
+    kualitas air tanah.
   Kategori: 5
   Art: {fileID: 21300000, guid: 7a927205017c43c4bb3d234471ae8b52, type: 3}
   DescBox: {fileID: 21300000, guid: 655c9b2ef6a3b9c49a500dfdec75143e, type: 3}

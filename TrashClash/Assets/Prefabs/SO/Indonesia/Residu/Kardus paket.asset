@@ -18,9 +18,8 @@ MonoBehaviour:
   Penalty: 6
   None: 8
   Buff: 0
-  Description: '"Mendapatkan +2 kekuatan di semua lokasi dan -2 kekuatan di semua
-    lokasi musuh bila diletakkan di lokasi yang sama dengan kategorinya Mendapatkan
-    -2 kekuatan di semua lokasi bila diletakkan di lokasi yang sama dengan kategorinya"'
+  Description: Kardus paket dapat didaur ulang, tetapi jika sudah rusak atau terkontaminasi,
+    sebaiknya dibuang sebagai residu. Penanganan yang benar mengurangi limbah.
   Kategori: 4
   Art: {fileID: 21300000, guid: c3a5a937aab648b429734c6495c689f7, type: 3}
   DescBox: {fileID: 21300000, guid: da55560ec5c217c43a6d9b2751037a35, type: 3}

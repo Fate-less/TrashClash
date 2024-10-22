@@ -18,9 +18,9 @@ MonoBehaviour:
   Penalty: 0
   None: 2
   Buff: 0
-  Description: '"Mendapatkan +2 kekuatan bila diletakkan di lokasi yang sesuai dengan
-    kategorinya Mendapatkan -2 kekuatan di semua lokasi bila diletakkan di lokasi
-    yang berbeda dengan kategorinya"'
+  Description: Pembersih lantai mengandung zat beracun yang dapat membahayakan lingkungan
+    jika tidak dibuang dengan benar. Zat ini dapat mencemari air dan tanah, mengganggu
+    keseimbangan alam.
   Kategori: 5
   Art: {fileID: 21300000, guid: 8f61dc9224a85644f801c64b417a1e6f, type: 3}
   DescBox: {fileID: 21300000, guid: 655c9b2ef6a3b9c49a500dfdec75143e, type: 3}

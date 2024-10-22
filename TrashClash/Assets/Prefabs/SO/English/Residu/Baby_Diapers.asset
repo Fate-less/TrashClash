@@ -18,7 +18,9 @@ MonoBehaviour:
   Penalty: 9
   None: 13
   Buff: 0
-  Description: 
+  Description: Baby diapers contain non-degradable materials and take an extremely
+    long time to decompose. Dispose of them in the residual waste bin to prevent
+    environmental pollution.
   Kategori: 4
   Art: {fileID: 21300000, guid: 8d359757ffa833c4c966ee43c60b3f52, type: 3}
   DescBox: {fileID: 21300000, guid: 73049c91de5205342baa486edb19ec95, type: 3}

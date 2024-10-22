@@ -18,7 +18,8 @@ MonoBehaviour:
   Penalty: 2
   None: 2
   Buff: 0
-  Description: 
+  Description: Unused tutoring catalogs can be recycled. Proper management helps
+    reduce the accumulation of paper waste.
   Kategori: 3
   Art: {fileID: 21300000, guid: 4fa82a8f6c76ff64bb9797340add4c3b, type: 3}
   DescBox: {fileID: 21300000, guid: 83aafbc3dc0a0ea488ccb9160832f43f, type: 3}

@@ -18,9 +18,9 @@ MonoBehaviour:
   Penalty: 8
   None: 8
   Buff: -2
-  Description: '"Mendapatkan -3 kekuatan di lokasi lain bila diletakkan di lokasi
-    yang berbeda dengan kategorinya Musuh mendapatkan -2 kekuatan pada setiap lokasi
-    bila diletakkan pada lokasi yang sama dengan kategorinya"'
+  Description: Minyak goreng bekas dapat mencemari air tanah dan saluran air jika
+    dibuang sembarangan. Pengelolaan yang tepat sangat penting untuk mencegah kerusakan
+    lingkungan.
   Kategori: 2
   Art: {fileID: 21300000, guid: 63428246e3e85754dac13662c8731567, type: 3}
   DescBox: {fileID: 21300000, guid: 6717da26e900495479c7895a71cb7d53, type: 3}

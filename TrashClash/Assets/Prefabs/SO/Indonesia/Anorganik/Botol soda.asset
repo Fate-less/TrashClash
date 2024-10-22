@@ -18,9 +18,9 @@ MonoBehaviour:
   Penalty: 1
   None: 3
   Buff: 0
-  Description: '"Mendapatkan +3 kekuatan bila diletakkan di lokasi yang sesuai dengan
-    kategori kartu ini Mendapatkan -2 kekuatan bila diletakkan di lokasi yang berbeda
-    dengan kategorinya"'
+  Description: Kaleng soda terbuat dari aluminium yang bisa didaur ulang. Namun,
+    jika tidak dibuang dengan benar, mereka akan menumpuk di tempat pembuangan sampah
+    dan memakan waktu lama untuk terurai.
   Kategori: 2
   Art: {fileID: 21300000, guid: 6c6a9e2db2aa58945868c4e67ced44bb, type: 3}
   DescBox: {fileID: 21300000, guid: 6717da26e900495479c7895a71cb7d53, type: 3}

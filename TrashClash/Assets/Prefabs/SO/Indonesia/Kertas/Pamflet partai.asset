@@ -18,9 +18,9 @@ MonoBehaviour:
   Penalty: 6
   None: 8
   Buff: 0
-  Description: '"Mendapatkan +2 kekuatan di semua lokasi bila diletakkan di lokasi
-    yang sama dengan kategorinya Mendapatkan -2 kekuatan di lokasi lain bila diletakkan
-    di lokasi yang berbeda dengan kategorinya"'
+  Description: Pamflet partai seringkali dibagikan dalam jumlah besar dan menjadi
+    sampah setelah pemilihan. Sebaiknya didaur ulang untuk mengurangi pencemaran
+    lingkungan.
   Kategori: 3
   Art: {fileID: 21300000, guid: 62f296f2e13ccb64bbfa8cd97cd412bf, type: 3}
   DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}

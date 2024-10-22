@@ -18,7 +18,8 @@ MonoBehaviour:
   Penalty: 2
   None: 2
   Buff: 0
-  Description: 
+  Description: Dirty tissues can't be recycled due to contamination. Proper disposal
+    in the residual waste bin prevents the spread of bacteria.
   Kategori: 4
   Art: {fileID: 21300000, guid: c516057bf2afd934b9ab5138cec2d134, type: 3}
   DescBox: {fileID: 21300000, guid: 73049c91de5205342baa486edb19ec95, type: 3}
