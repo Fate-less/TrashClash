@@ -96,7 +96,7 @@ public class PhaseCounter : MonoBehaviour
     IEnumerator BackToMenuCountDown()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene("Mainmenu");
     }
 
 }
