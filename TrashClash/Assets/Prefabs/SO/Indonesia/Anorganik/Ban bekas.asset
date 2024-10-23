@@ -18,9 +18,10 @@ MonoBehaviour:
   Penalty: 13
   None: 13
   Buff: 0
-  Description: Ban bekas membutuhkan waktu yang sangat lama untuk terurai. Jika dibakar,
-    ban ini akan melepaskan zat kimia berbahaya ke udara, menyebabkan polusi udara
-    yang serius.
+  Description: <color=green> +4 </color> Jika Dibuang ke Anorganik, <color=red> -5
+    </color> ke Tempat Lain, jika Salah Ditempatkan. Ban bekas membutuhkan waktu
+    yang sangat lama untuk terurai. Jika dibakar, ban ini akan melepaskan zat kimia
+    berbahaya ke udara, menyebabkan polusi udara yang serius.
   Kategori: 2
   Art: {fileID: 21300000, guid: 4cddcbf2cc18fbc4e9657249d55b79cf, type: 3}
   DescBox: {fileID: 21300000, guid: 6717da26e900495479c7895a71cb7d53, type: 3}

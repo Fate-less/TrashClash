@@ -18,8 +18,10 @@ MonoBehaviour:
   Penalty: 2
   None: 2
   Buff: -2
-  Description: Katalog bimbel yang sudah tidak terpakai bisa dijadikan bahan daur
-    ulang. Pengelolaan yang baik membantu mengurangi tumpukan sampah kertas.
+  Description: 'Jika Dibuang ke Kertas: <color=green> +2 </color> ke Semua Tempat
+    Sampah, <color=blue> -2 </color> ke Semua Tempat Sampah Musuh. Katalog bimbel
+    yang sudah tidak terpakai bisa dijadikan bahan daur ulang. Pengelolaan yang baik
+    membantu mengurangi tumpukan sampah kertas.'
   Kategori: 3
   Art: {fileID: 21300000, guid: 0aa5d78fc6c31994cb77c84ba14db7cf, type: 3}
   DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}

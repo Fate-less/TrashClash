@@ -18,9 +18,10 @@ MonoBehaviour:
   Penalty: 0
   None: 1
   Buff: 0
-  Description: Plastic bags are very difficult to decompose and can last for hundreds
-    of years in the environment. They often clog waterways and pose a threat to marine
-    life.
+  Description: <color=green> +2 </color> if Placed in Inorganic, <color=red> -1 </color>
+    if Placed Incorrectly. Plastic bags are very difficult to decompose and can last
+    for hundreds of years in the environment. They often clog waterways and pose
+    a threat to marine life.
   Kategori: 2
   Art: {fileID: 21300000, guid: b5336c0835d7dd140a8e5127d7284332, type: 3}
   DescBox: {fileID: 21300000, guid: 0ee00d969afdf4c498cbd3fec0ab6494, type: 3}

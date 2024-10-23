@@ -18,8 +18,9 @@ MonoBehaviour:
   Penalty: 5
   None: 5
   Buff: 0
-  Description: Koran lama cepat menumpuk dan menyebabkan limbah besar. Mendaur ulang
-    koran membantu mengurangi jumlah sampah yang dibuang ke tempat pembuangan akhir.
+  Description: <color=green> +3 </color> Jika Dibuang ke Kertas. Koran lama cepat
+    menumpuk dan menyebabkan limbah besar. Mendaur ulang koran membantu mengurangi
+    jumlah sampah yang dibuang ke tempat pembuangan akhir.
   Kategori: 3
   Art: {fileID: 21300000, guid: 21a804aaba990444daa3d76436e46f6d, type: 3}
   DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}

@@ -18,9 +18,10 @@ MonoBehaviour:
   Penalty: 8
   None: 8
   Buff: -2
-  Description: Minyak goreng bekas dapat mencemari air tanah dan saluran air jika
-    dibuang sembarangan. Pengelolaan yang tepat sangat penting untuk mencegah kerusakan
-    lingkungan.
+  Description: <color=blue> -2 </color> ke Semua Tempat Musuh, jika Dibuang ke Anorganik,
+    <color=red> -3 </color> ke Tempat Lain, jika Salah Ditempatkan. Minyak goreng
+    bekas dapat mencemari air tanah dan saluran air jika dibuang sembarangan. Pengelolaan
+    yang tepat sangat penting untuk mencegah kerusakan lingkungan.
   Kategori: 2
   Art: {fileID: 21300000, guid: 63428246e3e85754dac13662c8731567, type: 3}
   DescBox: {fileID: 21300000, guid: 6717da26e900495479c7895a71cb7d53, type: 3}

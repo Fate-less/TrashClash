@@ -26,9 +26,10 @@ public class PhaseCounter : MonoBehaviour
     public GameObject p1win;
     public GameObject p2win;
 
+    public AudioManager audioManager;
+
     private void Start()
     {
-
         StartCoroutine(Countdown());
     }
     IEnumerator Countdown()
@@ -40,6 +41,7 @@ public class PhaseCounter : MonoBehaviour
         {
             image1.GetComponent<Animator>().enabled = true;
             image1.GetComponent<TempatSampahAnim>().FirstLocationAnim();
+            audioManager.trashbinRevealed();
         }
         DisplayCount();
     }
@@ -54,6 +56,7 @@ public class PhaseCounter : MonoBehaviour
             {
                 image2.GetComponent<Animator>().enabled = true;
                 image2.GetComponent<TempatSampahAnim>().SecondLocationAnim();
+                audioManager.trashbinRevealed();
             }
         }
         else if(phaseCount == 5)
@@ -64,6 +67,7 @@ public class PhaseCounter : MonoBehaviour
             {
                 image3.GetComponent<Animator>().enabled = true;
                 image3.GetComponent<TempatSampahAnim>().ThirdLocationAnim();
+                audioManager.trashbinRevealed();
             }
         }
         else if(phaseCount > 6)
@@ -77,11 +81,13 @@ public class PhaseCounter : MonoBehaviour
             if (winnerCounter > 0)
             {
                 p1win.SetActive(true);
+                audioManager.playerWinning();
                 StartCoroutine(BackToMenuCountDown());
             }
             else 
             {
                 p2win.SetActive(true);
+                audioManager.playerWinning();
                 StartCoroutine(BackToMenuCountDown());
             }
         }

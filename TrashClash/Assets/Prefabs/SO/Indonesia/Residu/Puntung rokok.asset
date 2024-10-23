@@ -18,9 +18,11 @@ MonoBehaviour:
   Penalty: 2
   None: 5
   Buff: -1
-  Description: Puntung rokok mengandung racun yang berbahaya bagi lingkungan, terutama
-    bagi air dan tanah. Puntung ini sering berakhir mencemari perairan dan merusak
-    ekosistem.
+  Description: 'Jika Dibuang ke Residu: <color=green> +1 </color> ke Semua Tempat
+    Sampah, <color=blue> -1 </color> ke Semua Tempat Sampah Musuh & <color=red> -3
+    </color> ke Semua Tempat, jika Salah Ditempatkan. Puntung rokok mengandung racun
+    yang berbahaya bagi lingkungan, terutama bagi air dan tanah. Puntung ini sering
+    berakhir mencemari perairan dan merusak ekosistem.'
   Kategori: 4
   Art: {fileID: 21300000, guid: 7cd75b94e4e9bcd4fb8f9542fc45cdbb, type: 3}
   DescBox: {fileID: 21300000, guid: da55560ec5c217c43a6d9b2751037a35, type: 3}

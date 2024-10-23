@@ -18,8 +18,9 @@ MonoBehaviour:
   Penalty: 1
   None: 1
   Buff: 0
-  Description: Stale rice, although a leftover food, can decompose naturally. However,
-    if left unchecked, it can attract pests and produce unpleasant odors.
+  Description: <color=green> +1 </color> if Placed in Organic. Stale rice, although
+    a leftover food, can decompose naturally. However, if left unchecked, it can
+    attract pests and produce unpleasant odors.
   Kategori: 1
   Art: {fileID: 21300000, guid: 27ccaab073d537046830dfcdd27a06d1, type: 3}
   DescBox: {fileID: 21300000, guid: a0e9cf792af613d4998dd665bbb21b75, type: 3}

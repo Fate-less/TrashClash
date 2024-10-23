@@ -18,9 +18,9 @@ MonoBehaviour:
   Penalty: 3
   None: 8
   Buff: 0
-  Description: Tulang ayam bisa dimanfaatkan untuk pupuk jika diolah dengan benar,
-    namun penanganan yang buruk dapat menarik hewan liar dan menimbulkan bau busuk
-    dalam proses pembusukan.
+  Description: <color=red> -5 </color> Jika Salah DItempatkan. Tulang ayam bisa dimanfaatkan
+    untuk pupuk jika diolah dengan benar, namun penanganan yang buruk dapat menarik
+    hewan liar dan menimbulkan bau busuk dalam proses pembusukan.
   Kategori: 1
   Art: {fileID: 21300000, guid: 77eb12ffab0e5f24ab26e614b70a8059, type: 3}
   DescBox: {fileID: 21300000, guid: 597d0094c2504c24ca2acb32ec348b92, type: 3}

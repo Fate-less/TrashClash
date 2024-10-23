@@ -18,9 +18,11 @@ MonoBehaviour:
   Penalty: 8
   None: 13
   Buff: 0
-  Description: Obat yang sudah kadaluarsa tidak boleh dibuang sembarangan karena
-    dapat mencemari lingkungan dan menimbulkan risiko kesehatan. Obat ini harus dikelola
-    dengan cara yang tepat untuk mencegah kontaminasi.
+  Description: <color=green> +7 </color> ke Semua Tempat, jika Dibuang ke B3, <color=red>
+    -5 </color> ke Semua Tempat, jika Salah Ditempatkan. Obat yang sudah kadaluarsa
+    tidak boleh dibuang sembarangan karena dapat mencemari lingkungan dan menimbulkan
+    risiko kesehatan. Obat ini harus dikelola dengan cara yang tepat untuk mencegah
+    kontaminasi.
   Kategori: 5
   Art: {fileID: 21300000, guid: 31972a14b4d9fed4099891efd0c47d0d, type: 3}
   DescBox: {fileID: 21300000, guid: 655c9b2ef6a3b9c49a500dfdec75143e, type: 3}

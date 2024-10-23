@@ -18,9 +18,10 @@ MonoBehaviour:
   Penalty: 0
   None: 1
   Buff: -1
-  Description: Permen karet sulit terurai dan dapat menyebabkan kerusakan lingkungan
-    jika dibuang sembarangan. Perlu penanganan khusus agar tidak mencemari tanah
-    dan ruang publik.
+  Description: <color=blue> -1 </color> ke Semua Tempat Musuh, jika Dibuang ke Residu,
+    <color=red> -1 </color> ke Semua Tempat, jika Salah Ditempatkan. Permen karet
+    sulit terurai dan dapat menyebabkan kerusakan lingkungan jika dibuang sembarangan.
+    Perlu penanganan khusus agar tidak mencemari tanah dan ruang publik.
   Kategori: 4
   Art: {fileID: 21300000, guid: c69303669d3caa841919cf00f33793c9, type: 3}
   DescBox: {fileID: 21300000, guid: da55560ec5c217c43a6d9b2751037a35, type: 3}

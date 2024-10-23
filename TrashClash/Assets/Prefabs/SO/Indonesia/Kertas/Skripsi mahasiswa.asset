@@ -18,8 +18,11 @@ MonoBehaviour:
   Penalty: 8
   None: 13
   Buff: 0
-  Description: Skripsi mahasiswa yang sudah dicetak menjadi limbah kertas setelah
-    selesai digunakan. Daur ulang skripsi mengurangi pemborosan kertas.
+  Description: 'Jika Dibuang ke Kertas: <color=green> +3 </color> ke Semua Tempat
+    Sampah,  <color=blue> -3 </color> ke Semua Tempat Sampah Musuh & <color=red>
+    -5 </color> Jika Dibuang Tidak Sesuai Kategori. Skripsi mahasiswa yang sudah
+    dicetak menjadi limbah kertas setelah selesai digunakan. Daur ulang skripsi mengurangi
+    pemborosan kertas.'
   Kategori: 3
   Art: {fileID: 21300000, guid: 0b7311f56c21fc447904107e7f4c9711, type: 3}
   DescBox: {fileID: 21300000, guid: f3351cad29fc0774baac306f8d4a71b6, type: 3}
