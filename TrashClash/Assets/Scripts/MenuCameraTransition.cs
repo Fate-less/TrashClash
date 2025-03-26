@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class MenuCameraTransition : MonoBehaviour
 {
+    [Header("Referencing")]
     public Camera cam;
+    public Transform settingsPos;
+    public Transform levelSelectPos;
     private Vector3 startPos;
 
     private void Start()
@@ -13,7 +16,7 @@ public class MenuCameraTransition : MonoBehaviour
     }
     public void OpenSettings()
     {
-        LeanTween.moveLocal(cam.gameObject, new Vector3(13.2186f, 50, 14.04654f), 0.5f).setEaseOutQuart();
+        LeanTween.moveLocal(cam.gameObject, settingsPos.position, 0.5f).setEaseOutQuart();
     }
 
     public void BackToMain()
@@ -23,7 +26,7 @@ public class MenuCameraTransition : MonoBehaviour
 
     public void OpenLevelSelect()
     {
-        LeanTween.moveLocal(cam.gameObject, new Vector3(-34, 9, 14), 0.5f).setEaseOutQuart();
+        LeanTween.moveLocal(cam.gameObject, levelSelectPos.position, 0.5f).setEaseOutQuart();
     }
 
     //temporary

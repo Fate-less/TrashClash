@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Energy
   m_EditorClassIdentifier: 
   Name: Energy
-  Sprite: {fileID: 21300000, guid: df5497054d9e3ea49a763dcdff0c331c, type: 3}
+  Sprite: {fileID: 21300000, guid: 1a346c72a4a08504c83fea3e18daddb7, type: 3}

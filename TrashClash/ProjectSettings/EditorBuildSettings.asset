@@ -6,19 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Mainmenu.unity
+    path: Assets/Scenes/Dekstop/Mainmenu.unity
     guid: 2a422873bbf37884ea350482321df5af
   - enabled: 1
-    path: Assets/Scenes/Singleplayer.unity
+    path: Assets/Scenes/Dekstop/Singleplayer.unity
     guid: c48fdcff6d9f99a4bb705392f3e31ebe
   - enabled: 1
-    path: Assets/Scenes/SingleplayerEN.unity
+    path: Assets/Scenes/Dekstop/SingleplayerEN.unity
     guid: ddd76b0071cc15c48907018da15bebd7
   - enabled: 1
-    path: Assets/Scenes/MultiplayerOffline.unity
+    path: Assets/Scenes/Dekstop/MultiplayerOffline.unity
     guid: 301ca93af4edf2145a70d508ea72c443
   - enabled: 1
-    path: Assets/Scenes/MultiplayerOfflineEN.unity
+    path: Assets/Scenes/Dekstop/MultiplayerOfflineEN.unity
     guid: ffc361012a9de784298dcaf9dbb31100
   m_configObjects: {}
-  m_UseUCBPForAssetBundles: 0

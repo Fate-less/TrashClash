@@ -11,7 +11,10 @@ public class DescBoxTransition : MonoBehaviour
 
     private void Start()
     {
-        StartCoroutine(delayOneFrame());
+        //if(!Application.isMobilePlatform)
+        //{
+        //    StartCoroutine(delayOneFrame());
+        //}
     }
 
     public void ShowCardDescBox()
@@ -51,5 +54,21 @@ public class DescBoxTransition : MonoBehaviour
     {
         yield return new WaitForSeconds(duration);
         isOnCooldown = false;
+    }
+
+    public void MobileShowDescription()
+    {
+        if (!isOnCooldown)
+        {
+            descriptionTab.transform.position = openPosition.position;
+        }
+    }
+
+    public void MobileCloseCardDescBox()
+    {
+        if (!isOnCooldown)
+        {
+            descriptionTab.transform.position = closePosition.position;
+        }
     }
 }

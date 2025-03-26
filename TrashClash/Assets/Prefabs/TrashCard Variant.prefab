@@ -13,11 +13,11 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1250395176001841023, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
-      propertyPath: 'DragGates.Gates.Array.data[0]'
+      propertyPath: DragGates.Gates.Array.data[0]
       value: 
       objectReference: {fileID: 1069399136314323473}
     - target: {fileID: 1250395176001841023, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
-      propertyPath: 'DragGates.Gates.Array.data[1]'
+      propertyPath: DragGates.Gates.Array.data[1]
       value: 
       objectReference: {fileID: 99385986182066434}
     - target: {fileID: 1250395176001841023, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
@@ -28,6 +28,10 @@ PrefabInstance:
       propertyPath: IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3320165275064857739, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
+      propertyPath: MyDragDetector
+      value: 
+      objectReference: {fileID: 6685166040537621529}
     - target: {fileID: 5481571889886216536, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
       propertyPath: GroupTransitionEvents.Array.size
       value: 2
@@ -340,10 +344,10 @@ PrefabInstance:
       addedObject: {fileID: 8439960762190793979}
     - targetCorrespondingSourceObject: {fileID: 6462243022253552644, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 8525358132525980892}
+      addedObject: {fileID: 407440499855988164}
     - targetCorrespondingSourceObject: {fileID: 6462243022253552644, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 407440499855988164}
+      addedObject: {fileID: 1669909299259831429}
   m_SourcePrefab: {fileID: 100100000, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
 --- !u!212 &1455312609447004945 stripped
 SpriteRenderer:
@@ -557,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf98d223d333f0e42961fd6ead7e9bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8525358132525980892
+--- !u!114 &407440499855988164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -566,11 +570,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1455312610490005346}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78a555a08b3f005408f3e593581971f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2d39ac0c78603b3468281b4790fa24bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1669909299259831429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455312610490005346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8667b5385b446db4cafa0157d02f3af1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   IsActive: 1
-  OnHover:
+  OnPress:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8439960762190793979}
@@ -597,21 +613,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  OnUnHover:
+  OnButtonClicked:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &407440499855988164
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1455312610490005346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d39ac0c78603b3468281b4790fa24bc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  ClickGates:
+    Gates: []
 --- !u!114 &5952402479367488665 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2235789090670168063, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
@@ -621,6 +627,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03e29428d22108642966a7732ed9c5b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6685166040537621529 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1250395176001841023, guid: 93b7f5d60e554c54bb8ee95e357b9082, type: 3}
+  m_PrefabInstance: {fileID: 5592398513654481766}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1455312610490005346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4188835b46cc64a82eb952f5843450, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &7234615263298717459 stripped

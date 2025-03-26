@@ -11,6 +11,7 @@ public class ShowDescription : MonoBehaviour
     private TextMeshProUGUI descTMP;
     private Image descBox;
     private TrashCard trashCard;
+    private DescBoxTransition descBoxTransition;
 
     // Start is called before the first frame update
     void Start()
@@ -26,5 +27,6 @@ public class ShowDescription : MonoBehaviour
         descBox.sprite = trashCard.DescBox;
         cardImage.sprite = transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<SpriteRenderer>().sprite;
         descTMP.text = GetComponent<TrashCard>().Description;
+        descBoxTransition.MobileShowDescription();
     }
 }
