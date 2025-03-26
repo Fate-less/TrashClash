@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
+using System;
 
 public class PhaseCounter : MonoBehaviour
 {
@@ -102,7 +103,10 @@ public class PhaseCounter : MonoBehaviour
     IEnumerator BackToMenuCountDown()
     {
         yield return new WaitForSeconds(5);
-        SceneManager.LoadScene("Mainmenu");
+        if (SceneManager.GetActiveScene().name == "Singleplayer_MOBILE" || SceneManager.GetActiveScene().name == "SingleplayerEN_MOBILE")
+            SceneManager.LoadScene("Mainmenu_MOBILE");
+        else
+            SceneManager.LoadScene("Mainmenu");
     }
 
 }

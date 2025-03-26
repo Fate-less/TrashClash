@@ -44,7 +44,7 @@ public class OptionsManager : MonoBehaviour
 
     private void OnSingleplayerButtonClicked()
     {
-        string sceneName = selectedLanguage == "English" ? "SingleplayerEN" : "Singleplayer";
+        string sceneName = selectedLanguage == "English" ? "SingleplayerEN_MOBILE" : "Singleplayer_MOBILE";
         SceneManager.LoadScene(sceneName);
     }
     private void OnMultiplayerButtonClicked()
