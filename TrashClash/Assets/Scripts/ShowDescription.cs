@@ -19,6 +19,7 @@ public class ShowDescription : MonoBehaviour
         cardImage = GameObject.FindWithTag("Card Image").GetComponent<Image>();
         descTMP = GameObject.FindWithTag("Card Desc").GetComponent<TextMeshProUGUI>();
         descBox = GameObject.FindWithTag("Card Desc Box").GetComponent<Image>();
+        descBoxTransition = GameObject.Find("System").GetComponent<DescBoxTransition>();
         trashCard = GetComponent<TrashCard>();
     }
 
