@@ -8,6 +8,7 @@ public class MenuCameraTransition : MonoBehaviour
     public Camera cam;
     public Transform settingsPos;
     public Transform levelSelectPos;
+    public Transform defaultMenuPos;
     private Vector3 startPos;
 
     private void Start()
@@ -21,7 +22,7 @@ public class MenuCameraTransition : MonoBehaviour
 
     public void BackToMain()
     {
-        LeanTween.moveLocal(cam.gameObject, new Vector3(13.2186f, 9.156084f, 14.04654f), 0.5f).setEaseInQuart();
+        LeanTween.moveLocal(cam.gameObject, defaultMenuPos.position, 0.5f).setEaseInQuart();
     }
 
     public void OpenLevelSelect()

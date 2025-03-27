@@ -5,6 +5,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 using System;
+using CardHouse;
+using UnityEngine.InputSystem;
 
 public class PhaseCounter : MonoBehaviour
 {
@@ -26,8 +28,10 @@ public class PhaseCounter : MonoBehaviour
 
     public GameObject p1win;
     public GameObject p2win;
+    public GameObject endGameOverllay;
 
     public AudioManager audioManager;
+    public GameObject nextPhaseButtonObject;
 
     private void Start()
     {
@@ -91,6 +95,7 @@ public class PhaseCounter : MonoBehaviour
                 audioManager.playerWinning();
                 StartCoroutine(BackToMenuCountDown());
             }
+            endGameOverllay.SetActive(true);
         }
         DisplayCount();
     }
@@ -109,4 +114,23 @@ public class PhaseCounter : MonoBehaviour
             SceneManager.LoadScene("Mainmenu");
     }
 
+    public void CooldownNextButton()
+    {
+        SetInteractable(false);
+        StartCoroutine(delayNextButton());
+    }
+
+    IEnumerator delayNextButton()
+    {
+        yield return new WaitForSeconds(2f);
+        SetInteractable(true);
+    }
+    
+    private void SetInteractable(bool boolean)
+    {
+        Button button = nextPhaseButtonObject.GetComponent<Button>();
+        button.interactable = boolean;
+        ClickDetectorUI clickDetectorUI = nextPhaseButtonObject.GetComponent<ClickDetectorUI>();
+        clickDetectorUI.IsActive = boolean;
+    }
 }

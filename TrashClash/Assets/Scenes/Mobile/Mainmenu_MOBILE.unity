@@ -1587,6 +1587,7 @@ MonoBehaviour:
   cam: {fileID: 7370277068439015825}
   settingsPos: {fileID: 669592766}
   levelSelectPos: {fileID: 663335324}
+  defaultMenuPos: {fileID: 1250960044}
 --- !u!4 &623990602
 Transform:
   m_ObjectHideFlags: 0
@@ -2504,6 +2505,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177296978}
   m_CullTransparentMesh: 1
+--- !u!1 &1250960043
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1250960044}
+  m_Layer: 0
+  m_Name: DefaultMenuCameraPosition
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1250960044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250960043}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.004636133, y: -0.98759437, z: 0.029707843, w: 0.15412125}
+  m_LocalPosition: {x: -1.69, y: 6.42, z: -6.049016}
+  m_LocalScale: {x: 25, y: 25, z: 25}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1367300766
 GameObject:
   m_ObjectHideFlags: 0
@@ -6911,6 +6943,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 1108926661}
   - {fileID: 7202193381855931762}
+  - {fileID: 1250960044}
   - {fileID: 663335324}
   - {fileID: 669592766}
   - {fileID: 543450652081115856}

@@ -16,6 +16,7 @@ namespace CardHouse
         public Transform CardPresentationPosition;
         public List<Button> ActiveButtons;
         public List<ClickDetector> ValidClickTargets;
+        public List<ClickDetectorUI> ValidClickTargetsUI;
         public List<DragTransition> ValidDrags;
         public List<TimedEvent> OnPhaseStartEventChain;
         public List<TimedEvent> OnPhaseEndEventChain;
